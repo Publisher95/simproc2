@@ -5,6 +5,9 @@
  * Blake Karbon
  * Date:
  * 2/17/2026
+ * 
+ * we have attempted all three extra credits
+ *
  *
  * Goal: Implement 2.a / 2.b / 2.c so that EACH experiment creates/destroys
  * exactly N_TOTAL threads (including all parent/initial/child/grandchild threads).
