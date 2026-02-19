@@ -1,7 +1,10 @@
 /*
  * CS 440 Project 2 — POSIX (pthreads) TEMPLATE
  * Name(s):
+ * Michael Gavina
+ * Blake Karbon
  * Date:
+ * 2/17/2026
  *
  * Goal: Implement 2.a / 2.b / 2.c so that EACH experiment creates/destroys
  * exactly N_TOTAL threads (including all parent/initial/child/grandchild threads).
@@ -96,20 +99,40 @@ static void *flat_worker(void *arg) {
 // ============================================================
 static void run2a_flat_no_batching(void) {
     printf("\n=== 2.a Flat (no batching) ===\n");
+    int rc;
     long long start = now_ns();
+    
+
+    pthread_t *ths = malloc(sizeof(*ths) * N_TOTAL);
 
     // TODO: allocate pthread_t array of size N_TOTAL
     // pthread_t *ths = malloc(sizeof(*ths) * N_TOTAL);
     // TODO: optionally allocate args array or reuse one per thread
+
+
+    for(int i = 0; i < N_TOTAL; ++i){
+        atomic_fetch_add(&g_created, 1);
+        rc = pthread_create(&ths[i], NULL, flat_worker, argptr);
+        die_pthread(); // something must be passed here, I don't know what
+    }
 
     // TODO: loop i = 0..N_TOTAL-1
     //   - atomic_fetch_add(&g_created, 1)
     //   - pthread_create(&ths[i], NULL, flat_worker, argptr)
     //   - handle rc with die_pthread
 
+    
+
+    for(int i = 0; i < N_TOTAL; ++i){
+       pthread_join(ths[ths.size-i],NULL);
+    }
     // TODO: join all threads (optionally reverse order)
     //   - pthread_join(ths[i], NULL)
 
+
+
+    free(ths);
+    ths = NULL;
     // TODO: free allocations
 
     long long end = now_ns();
@@ -158,6 +181,7 @@ static void *child_worker_2b(void *arg) {
 
 static void *parent_worker_2b_no_batching(void *arg) {
     parent_arg_t *pa = (parent_arg_t *)arg;
+    pthread children[B_CHILDREN_PER_PARENT];
 
     // TODO: create B_CHILDREN_PER_PARENT child threads
     //   - allocate pthread_t children[B_CHILDREN_PER_PARENT]
