@@ -184,7 +184,7 @@ static void *child_worker_2b(void *arg) {
 
 static void *parent_worker_2b_no_batching(void *arg) {
     parent_arg_t *pa = (parent_arg_t *)arg;
-    pthread children[B_CHILDREN_PER_PARENT];
+    pthread *children = malloc(sizeof(*children) * B_CHILDREN_PER_PARENT);
 
     // TODO: create B_CHILDREN_PER_PARENT child threads
     //   - allocate pthread_t children[B_CHILDREN_PER_PARENT]
@@ -193,6 +193,8 @@ static void *parent_worker_2b_no_batching(void *arg) {
     // TODO: free pa if heap-allocated
 
     atomic_fetch_add(&g_destroyed, 1); // parent destroyed
+    free(children);
+    children = NULL;
     return NULL;
 }
 
