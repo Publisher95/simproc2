@@ -57,6 +57,10 @@ static atomic_int g_destroyed = 0;
 static long long now_ns(void) {
     struct timespec ts;
     // TODO: handle error if clock_gettime fails (rare)
+    if (clock_gettime(CLOCK_MONOTONIC, &ts) != 0) {
+        perror("clock_gettime");
+        exit(EXIT_FAILURE);
+    }
     clock_gettime(CLOCK_MONOTONIC, &ts);
     return (long long)ts.tv_sec * 1000000000LL + (long long)ts.tv_nsec;
 }
@@ -106,7 +110,8 @@ static void run2a_flat_no_batching(void) {
     long long start = now_ns();
     
 
-    pthread_t *ths = malloc(sizeof(*ths) * N_TOTAL);
+    pthread_t *ths = malloc(sizeof(pthread_t) * N_TOTAL);
+    if (!ths) { perror("malloc"); exit(1); } // Error out if malloc fail
 
     // TODO: allocate pthread_t array of size N_TOTAL
     // pthread_t *ths = malloc(sizeof(*ths) * N_TOTAL);
