@@ -3,8 +3,7 @@
 ## System Info:
 
 ### Operating System
-Linux env-pop-x86_64 6.17.9-76061709-generic #202511241048~1764704751~22.04~b24b425 SMP PREEMPT_DYNAMIC Tue D x86_64 GNU/Linux
-
+```text
 PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
 NAME="Debian GNU/Linux"
 VERSION_ID="13"
@@ -15,8 +14,10 @@ ID=debian
 HOME_URL="https://www.debian.org/"
 SUPPORT_URL="https://www.debian.org/support"
 BUG_REPORT_URL="https://bugs.debian.org/"
+```
 
 ### CPU:
+```text
 Architecture:                            x86_64
 CPU op-mode(s):                          32-bit, 64-bit
 Address sizes:                           39 bits physical, 48 bits virtual
@@ -62,22 +63,33 @@ Vulnerability Srbds:                     Not affected
 Vulnerability Tsa:                       Not affected
 Vulnerability Tsx async abort:           Not affected
 Vulnerability Vmscape:                   Mitigation; IBPB before exit to userspace
+```
 
 ### RAM:
+```text
                total        used        free      shared  buff/cache   available
 Mem:            62Gi        21Gi        39Gi       1.4Gi       6.9Gi        40Gi
 Swap:           19Gi          0B        19Gi
+```
 
 ### Language/runtime version:
 #### C
+```text
 gcc (Debian 14.2.0-19) 14.2.0
 Copyright (C) 2024 Free Software Foundation, Inc.
 This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+```
+
 #### Java
+```text
 javac 21.0.10
+```
+
 #### Python
+```text
 Python 3.13.5
+```
 
 ### Methodology:
 ### How threads were created and joined:
