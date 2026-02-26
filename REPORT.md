@@ -2,7 +2,7 @@
 
 ## System Info:
 
-### Operating System
+### Operating System:
 ```text
 PRETTY_NAME="Debian GNU/Linux 13 (trixie)"
 NAME="Debian GNU/Linux"
@@ -73,7 +73,7 @@ Swap:           19Gi          0B        19Gi
 ```
 
 ### Language/runtime version:
-#### C
+#### C:
 ```text
 gcc (Debian 14.2.0-19) 14.2.0
 Copyright (C) 2024 Free Software Foundation, Inc.
@@ -81,12 +81,12 @@ This is free software; see the source for copying conditions.  There is NO
 warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 ```
 
-#### Java
+#### Java:
 ```text
 javac 21.0.10
 ```
 
-#### Python
+#### Python:
 ```text
 Python 3.13.5
 ```
