@@ -104,7 +104,7 @@ static void *flat_worker(void *arg) {
 // ============================================================
 // 2.a — Flat (no batching)
 // ============================================================
-static void run2a_flat_no_batching(void) {
+static long long run2a_flat_no_batching(void) {
     printf("\n=== 2.a Flat (no batching) ===\n");
     int rc;
     long long start = now_ns();
@@ -135,6 +135,7 @@ static void run2a_flat_no_batching(void) {
     free(ths);
     long long end = now_ns();
     print_summary("2.a", start, end);
+    return end - start;
 }
 
 // ============================================================
@@ -210,7 +211,7 @@ static void *parent_worker_2b_no_batching(void *arg) {
     return NULL;
 }
 
-static void run2b_two_level_no_batching(void) {
+static long long run2b_two_level_no_batching(void) {
     printf("\n=== 2.b Two-level (no batching) ===\n");
     long long start = now_ns();
 
@@ -236,6 +237,7 @@ static void run2b_two_level_no_batching(void) {
 
     long long end = now_ns();
     print_summary("2.b", start, end);
+    return end - start;
 }
 
 // ============================================================
@@ -355,7 +357,7 @@ static void *initial_worker_2c_no_batching(void *arg) {
     return NULL;
 }
 
-static void run2c_three_level_no_batching(void) {
+static long long run2c_three_level_no_batching(void) {
     printf("\n=== 2.c Three-level (no batching) ===\n");
     long long start = now_ns();
 
@@ -381,6 +383,7 @@ static void run2c_three_level_no_batching(void) {
 
     long long end = now_ns();
     print_summary("2.c", start, end);
+    return end - start;
 }
 
 // ============================================================
@@ -431,21 +434,36 @@ static void run2c_three_level_batched(int grand_batch_size) {
 // ============================================================
 int main(void) {
     // TODO: run 3 trials each and compute averages in your report.
+    long long elapsedA[3];
+    long long elapsedB[3]; 
+    long long elapsedC[3];
+    for (int i = 0;i<3;i++) {
+	printf("Trial %d:\n",i);
+        reset_counts();
+        elapsedA[i] = run2a_flat_no_batching();
+        // reset_counts(); Batching not required as limits are never met.
+        // run2a_flat_batched(A_BATCH_SIZE);
 
-    reset_counts();
-    run2a_flat_no_batching();
-    // reset_counts(); Batching not required as limits are never met.
-    // run2a_flat_batched(A_BATCH_SIZE);
+        reset_counts();
+        elapsedB[i] = run2b_two_level_no_batching();
+        // reset_counts();
+        // run2b_two_level_batched(B_CHILD_BATCH_SIZE);
 
-    reset_counts();
-    run2b_two_level_no_batching();
-    // reset_counts();
-    // run2b_two_level_batched(B_CHILD_BATCH_SIZE);
-
-    reset_counts();
-    run2c_three_level_no_batching();
-    // reset_counts();
-    // run2c_three_level_batched(C_GRANDCHILD_BATCH_SIZE);
+        reset_counts();
+        elapsedC[i] = run2c_three_level_no_batching();
+        // reset_counts();
+        // run2c_three_level_batched(C_GRANDCHILD_BATCH_SIZE);
+    }
+    long long avgA = (elapsedA[0] + elapsedA[1] + elapsedA[2]) / 3;
+    long long avgB = (elapsedB[0] + elapsedB[1] + elapsedB[2]) / 3;
+    long long avgC = (elapsedC[0] + elapsedC[1] + elapsedC[2]) / 3;
+    double avgAms = avgA / 1e6;
+    double avgBms = avgB / 1e6;
+    double avgCms = avgC / 1e6;
+    printf("Averages:\n\n");
+    printf("Average 2.a elapsed: %.3f ms\n", avgAms);
+    printf("Average 2.b elapsed: %.3f ms\n", avgBms);
+    printf("Average 2.c elapsed: %.3f ms\n", avgCms);
 
     return 0;
 }
