@@ -73,6 +73,7 @@ Swap:           19Gi          0B        19Gi
 ```
 
 ### Language/runtime version:
+
 #### C:
 ```text
 gcc (Debian 14.2.0-19) 14.2.0
@@ -86,6 +87,20 @@ Python 3.13.5
 ```
 
 ### Methodology:
+
 ### How threads were created and joined:
+
 ### Whether batching was used:
 No batching was not used or required.
+
+### Analysis:
+- Discuss why times differ despite identical thread counts
+- Discuss scheduling and non-determinism
+- Comment on the effect of hierarchy
+
+### Table:
+| Language | Average 2.a (ms) | Average 2.b (ms) | Average 2.c (ms) |
+|----------|------------------|------------------|-------------------|
+| C        | 187.449          | 209.407          | 233.077           |
+| Python    | 412.427          | 470.403          | 471.087           |
+
