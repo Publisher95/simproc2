@@ -1,0 +1,1883 @@
+Trial 0:
+
+=== 2.a Flat (no batching) ===
+Created threads: 1-1000
+Created threads: 1001-2000
+Created threads: 2001-3000
+Created threads: 3001-4000
+Created threads: 4001-5000
+Joined threads: 1-1000
+Joined threads: 1001-2000
+Joined threads: 2001-3000
+Joined threads: 3001-4000
+Joined threads: 4001-5000
+2.a elapsed: 410.075 ms
+Threads created:   5000
+Threads destroyed: 5000
+
+=== 2.b Two-level (no batching) ===
+Parent 1 started
+Parent 2 started
+Parent 3 started
+Parent 4 started
+Parent 5 started
+Parent 6 started
+Parent 7 started
+Parent 8 started
+Parent 9 started
+Parent 10 started
+Parent 11 started
+Parent 12 started
+Parent 13 started
+Parent 14 started
+Parent 15 started
+Parent 16 started
+Parent 17 started
+Parent 18 started
+Parent 19 started
+Parent 20 started
+Parent 21 started
+Parent 22 started
+Parent 23 started
+Parent 24 started
+Parent 25 started
+Parent 26 started
+Parent 4 created children: 4-1 ... 4-25
+Parent 27 started
+Parent 2 created children: 2-1 ... 2-25
+Parent 1 created children: 1-1 ... 1-25
+Parent 28 started
+Parent 29 started
+Parent 6 created children: 6-1 ... 6-25
+Parent 30 started
+Parent 31 started
+Parent 3 created children: 3-1 ... 3-25
+Parent 32 started
+Parent 7 created children: 7-1 ... 7-25
+Parent 33 started
+Parent 5 created children: 5-1 ... 5-25
+Parent 13 created children: 13-1 ... 13-25
+Parent 34 started
+Parent 35 started
+Parent 8 created children: 8-1 ... 8-25
+Parent 12 created children: 12-1 ... 12-25
+Parent 9 created children: 9-1 ... 9-25
+Parent 36 started
+Parent 10 created children: 10-1 ... 10-25
+Parent 11 created children: 11-1 ... 11-25
+Parent 37 started
+Parent 14 created children: 14-1 ... 14-25
+Parent 38 started
+Parent 15 created children: 15-1 ... 15-25
+Parent 39 started
+Parent 40 started
+Parent 41 started
+Parent 17 created children: 17-1 ... 17-25
+Parent 21 created children: 21-1 ... 21-25
+Parent 42 started
+Parent 43 started
+Parent 19 created children: 19-1 ... 19-25
+Parent 44 started
+Parent 16 created children: 16-1 ... 16-25
+Parent 20 created children: 20-1 ... 20-25
+Parent 45 started
+Parent 46 started
+Parent 22 created children: 22-1 ... 22-25
+Parent 27 created children: 27-1 ... 27-25
+Parent 23 created children: 23-1 ... 23-25
+Parent 47 started
+Parent 18 created children: 18-1 ... 18-25
+Parent 48 started
+Parent 49 started
+Parent 25 created children: 25-1 ... 25-25
+Parent 24 created children: 24-1 ... 24-25
+Parent 26 created children: 26-1 ... 26-25
+Parent 4 created children: 4-26 ... 4-50
+Parent 50 started
+Parent 2 created children: 2-26 ... 2-50
+Parent 28 created children: 28-1 ... 28-25
+Parent 3 created children: 3-26 ... 3-50
+Parent 6 created children: 6-26 ... 6-50
+Parent 1 created children: 1-26 ... 1-50
+Parent 29 created children: 29-1 ... 29-25
+Parent 34 created children: 34-1 ... 34-25
+Parent 30 created children: 30-1 ... 30-25
+Parent 5 created children: 5-26 ... 5-50
+Parent 13 created children: 13-26 ... 13-50
+Parent 35 created children: 35-1 ... 35-25
+Parent 8 created children: 8-26 ... 8-50
+Parent 9 created children: 9-26 ... 9-50
+Parent 33 created children: 33-1 ... 33-25
+Parent 7 created children: 7-26 ... 7-50
+Parent 31 created children: 31-1 ... 31-25
+Parent 12 created children: 12-26 ... 12-50
+Parent 39 created children: 39-1 ... 39-25
+Parent 11 created children: 11-26 ... 11-50
+Parent 36 created children: 36-1 ... 36-25
+Parent 37 created children: 37-1 ... 37-25
+Parent 10 created children: 10-26 ... 10-50
+Parent 15 created children: 15-26 ... 15-50
+Parent 32 created children: 32-1 ... 32-25
+Parent 38 created children: 38-1 ... 38-25
+Parent 14 created children: 14-26 ... 14-50
+Parent 41 created children: 41-1 ... 41-25
+Parent 19 created children: 19-26 ... 19-50
+Parent 43 created children: 43-1 ... 43-25
+Parent 44 created children: 44-1 ... 44-25
+Parent 17 created children: 17-26 ... 17-50
+Parent 40 created children: 40-1 ... 40-25
+Parent 27 created children: 27-26 ... 27-50
+Parent 46 created children: 46-1 ... 46-25
+Parent 21 created children: 21-26 ... 21-50
+Parent 20 created children: 20-26 ... 20-50
+Parent 45 created children: 45-1 ... 45-25
+Parent 42 created children: 42-1 ... 42-25
+Parent 18 created children: 18-26 ... 18-50
+Parent 23 created children: 23-26 ... 23-50
+Parent 22 created children: 22-26 ... 22-50
+Parent 47 created children: 47-1 ... 47-25
+Parent 49 created children: 49-1 ... 49-25
+Parent 2 created children: 2-51 ... 2-75
+Parent 50 created children: 50-1 ... 50-25
+Parent 4 created children: 4-51 ... 4-75
+Parent 16 created children: 16-26 ... 16-50
+Parent 26 created children: 26-26 ... 26-50
+Parent 25 created children: 25-26 ... 25-50
+Parent 48 created children: 48-1 ... 48-25
+Parent 24 created children: 24-26 ... 24-50
+Parent 28 created children: 28-26 ... 28-50
+Parent 3 created children: 3-51 ... 3-75
+Parent 5 created children: 5-51 ... 5-75
+Parent 34 created children: 34-26 ... 34-50
+Parent 1 created children: 1-51 ... 1-75
+Parent 13 created children: 13-51 ... 13-75
+Parent 6 created children: 6-51 ... 6-75
+Parent 33 created children: 33-26 ... 33-50
+Parent 29 created children: 29-26 ... 29-50
+Parent 9 created children: 9-51 ... 9-75
+Parent 15 created children: 15-51 ... 15-75
+Parent 30 created children: 30-26 ... 30-50
+Parent 36 created children: 36-26 ... 36-50
+Parent 35 created children: 35-26 ... 35-50
+Parent 37 created children: 37-26 ... 37-50
+Parent 8 created children: 8-51 ... 8-75
+Parent 39 created children: 39-26 ... 39-50
+Parent 11 created children: 11-51 ... 11-75
+Parent 7 created children: 7-51 ... 7-75
+Parent 12 created children: 12-51 ... 12-75
+Parent 14 created children: 14-51 ... 14-75
+Parent 43 created children: 43-26 ... 43-50
+Parent 10 created children: 10-51 ... 10-75
+Parent 31 created children: 31-26 ... 31-50
+Parent 17 created children: 17-51 ... 17-75
+Parent 19 created children: 19-51 ... 19-75
+Parent 40 created children: 40-26 ... 40-50
+Parent 32 created children: 32-26 ... 32-50
+Parent 44 created children: 44-26 ... 44-50
+Parent 41 created children: 41-26 ... 41-50
+Parent 38 created children: 38-26 ... 38-50
+Parent 27 created children: 27-51 ... 27-75
+Parent 18 created children: 18-51 ... 18-75
+Parent 42 created children: 42-26 ... 42-50
+Parent 49 created children: 49-26 ... 49-50
+Parent 20 created children: 20-51 ... 20-75
+Parent 45 created children: 45-26 ... 45-50
+Parent 22 created children: 22-51 ... 22-75
+Parent 46 created children: 46-26 ... 46-50
+Parent 50 created children: 50-26 ... 50-50
+Parent 25 created children: 25-51 ... 25-75
+Parent 26 created children: 26-51 ... 26-75
+Parent 21 created children: 21-51 ... 21-75
+Parent 16 created children: 16-51 ... 16-75
+Parent 28 created children: 28-51 ... 28-75
+Parent 23 created children: 23-51 ... 23-75
+Parent 48 created children: 48-26 ... 48-50
+Parent 24 created children: 24-51 ... 24-75
+Parent 47 created children: 47-26 ... 47-50
+Parent 33 created children: 33-51 ... 33-75
+Parent 34 created children: 34-51 ... 34-75
+Parent 36 created children: 36-51 ... 36-75
+Parent 30 created children: 30-51 ... 30-75
+Parent 35 created children: 35-51 ... 35-75
+Parent 39 created children: 39-51 ... 39-75
+Parent 29 created children: 29-51 ... 29-75
+Parent 32 created children: 32-51 ... 32-75
+Parent 42 created children: 42-51 ... 42-75
+Parent 37 created children: 37-51 ... 37-75
+Parent 43 created children: 43-51 ... 43-75
+Parent 38 created children: 38-51 ... 38-75
+Parent 41 created children: 41-51 ... 41-75
+Parent 31 created children: 31-51 ... 31-75
+Parent 49 created children: 49-51 ... 49-75
+Parent 46 created children: 46-51 ... 46-75
+Parent 50 created children: 50-51 ... 50-75
+Parent 40 created children: 40-51 ... 40-75
+Parent 44 created children: 44-51 ... 44-75
+Parent 45 created children: 45-51 ... 45-75
+Parent 48 created children: 48-51 ... 48-75
+Parent 47 created children: 47-51 ... 47-75
+2.b elapsed: 483.823 ms
+Threads created:   5000
+Threads destroyed: 5000
+
+=== 2.c Three-level (no batching) ===
+Initial 1 started
+Initial 1 created child: 1-1
+Initial 2 started
+Initial 1 created child: 1-2
+Initial 3 started
+Initial 2 created child: 2-1
+Initial 1 created child: 1-3
+Initial 4 started
+Initial 2 created child: 2-2
+Initial 3 created child: 3-1
+Initial 4 created child: 4-1
+Initial 5 started
+Initial 2 created child: 2-3
+Initial 6 started
+Initial 5 created child: 5-1
+Initial 4 created child: 4-2
+Initial 5 created child: 5-2
+Initial 6 created child: 6-1
+Initial 3 created child: 3-2
+Initial 5 created child: 5-3
+Initial 4 created child: 4-3
+Initial 7 started
+Initial 8 started
+Initial 6 created child: 6-2
+Initial 3 created child: 3-3
+Initial 9 started
+Initial 8 created child: 8-1
+Initial 7 created child: 7-1
+Initial 9 created child: 9-1
+Initial 10 started
+Initial 8 created child: 8-2
+Initial 6 created child: 6-3
+Initial 7 created child: 7-2
+Initial 8 created child: 8-3
+Initial 7 created child: 7-3
+Initial 9 created child: 9-2
+Initial 11 started
+Initial 10 created child: 10-1
+Initial 11 created child: 11-1
+Initial 9 created child: 9-3
+Initial 12 started
+Initial 12 created child: 12-1
+Initial 11 created child: 11-2
+Initial 13 started
+Initial 10 created child: 10-2
+Initial 12 created child: 12-2
+Initial 11 created child: 11-3
+Initial 14 started
+Initial 13 created child: 13-1
+Initial 12 created child: 12-3
+Initial 10 created child: 10-3
+Initial 13 created child: 13-2
+Initial 15 started
+Initial 13 created child: 13-3
+Initial 14 created child: 14-1
+Initial 15 created child: 15-1
+Initial 16 started
+Initial 17 started
+Initial 15 created child: 15-2
+Initial 14 created child: 14-2
+Initial 17 created child: 17-1
+Initial 18 started
+Initial 17 created child: 17-2
+Initial 16 created child: 16-1
+Initial 19 started
+Initial 18 created child: 18-1
+Initial 17 created child: 17-3
+Initial 15 created child: 15-3
+Initial 16 created child: 16-2
+Initial 16 created child: 16-3
+Initial 19 created child: 19-1
+Initial 20 started
+Initial 19 created child: 19-2
+Initial 18 created child: 18-2
+Initial 14 created child: 14-3
+Initial 20 created child: 20-1
+Initial 18 created child: 18-3
+Initial 19 created child: 19-3
+Initial 20 created child: 20-2
+Initial 20 created child: 20-3
+Child 3-1 created grandchildren: 3-1-1 ... 3-1-25
+Child 1-1 created grandchildren: 1-1-1 ... 1-1-25
+Child 4-1 created grandchildren: 4-1-1 ... 4-1-25
+Child 1-3 created grandchildren: 1-3-1 ... 1-3-25
+Child 2-2 created grandchildren: 2-2-1 ... 2-2-25
+Child 3-3 created grandchildren: 3-3-1 ... 3-3-25
+Child 1-2 created grandchildren: 1-2-1 ... 1-2-25
+Child 2-3 created grandchildren: 2-3-1 ... 2-3-25
+Child 5-1 created grandchildren: 5-1-1 ... 5-1-25
+Child 8-1 created grandchildren: 8-1-1 ... 8-1-25
+Child 5-3 created grandchildren: 5-3-1 ... 5-3-25
+Child 2-1 created grandchildren: 2-1-1 ... 2-1-25
+Child 5-2 created grandchildren: 5-2-1 ... 5-2-25
+Child 6-1 created grandchildren: 6-1-1 ... 6-1-25
+Child 4-3 created grandchildren: 4-3-1 ... 4-3-25
+Child 7-1 created grandchildren: 7-1-1 ... 7-1-25
+Child 4-2 created grandchildren: 4-2-1 ... 4-2-25
+Child 6-3 created grandchildren: 6-3-1 ... 6-3-25
+Child 11-1 created grandchildren: 11-1-1 ... 11-1-25
+Child 9-1 created grandchildren: 9-1-1 ... 9-1-25
+Child 3-2 created grandchildren: 3-2-1 ... 3-2-25
+Child 7-2 created grandchildren: 7-2-1 ... 7-2-25
+Child 7-3 created grandchildren: 7-3-1 ... 7-3-25
+Child 6-2 created grandchildren: 6-2-1 ... 6-2-25
+Child 13-2 created grandchildren: 13-2-1 ... 13-2-25
+Child 10-1 created grandchildren: 10-1-1 ... 10-1-25
+Child 8-2 created grandchildren: 8-2-1 ... 8-2-25
+Child 10-3 created grandchildren: 10-3-1 ... 10-3-25
+Child 11-3 created grandchildren: 11-3-1 ... 11-3-25
+Child 17-1 created grandchildren: 17-1-1 ... 17-1-25
+Child 8-3 created grandchildren: 8-3-1 ... 8-3-25
+Child 9-3 created grandchildren: 9-3-1 ... 9-3-25
+Child 13-1 created grandchildren: 13-1-1 ... 13-1-25
+Child 11-2 created grandchildren: 11-2-1 ... 11-2-25
+Child 18-1 created grandchildren: 18-1-1 ... 18-1-25
+Child 14-1 created grandchildren: 14-1-1 ... 14-1-25
+Child 13-3 created grandchildren: 13-3-1 ... 13-3-25
+Child 16-2 created grandchildren: 16-2-1 ... 16-2-25
+Child 12-2 created grandchildren: 12-2-1 ... 12-2-25
+Child 9-2 created grandchildren: 9-2-1 ... 9-2-25
+Child 10-2 created grandchildren: 10-2-1 ... 10-2-25
+Child 17-2 created grandchildren: 17-2-1 ... 17-2-25
+Child 12-1 created grandchildren: 12-1-1 ... 12-1-25
+Child 14-2 created grandchildren: 14-2-1 ... 14-2-25
+Child 15-1 created grandchildren: 15-1-1 ... 15-1-25
+Child 12-3 created grandchildren: 12-3-1 ... 12-3-25
+Child 16-3 created grandchildren: 16-3-1 ... 16-3-25
+Child 14-3 created grandchildren: 14-3-1 ... 14-3-25
+Child 19-3 created grandchildren: 19-3-1 ... 19-3-25
+Child 15-2 created grandchildren: 15-2-1 ... 15-2-25
+Child 17-3 created grandchildren: 17-3-1 ... 17-3-25
+Child 15-3 created grandchildren: 15-3-1 ... 15-3-25
+Child 19-2 created grandchildren: 19-2-1 ... 19-2-25
+Child 19-1 created grandchildren: 19-1-1 ... 19-1-25
+Child 18-3 created grandchildren: 18-3-1 ... 18-3-25
+Child 20-2 created grandchildren: 20-2-1 ... 20-2-25
+Child 16-1 created grandchildren: 16-1-1 ... 16-1-25
+Child 20-1 created grandchildren: 20-1-1 ... 20-1-25
+Child 3-1 created grandchildren: 3-1-26 ... 3-1-50
+Child 20-3 created grandchildren: 20-3-1 ... 20-3-25
+Child 3-3 created grandchildren: 3-3-26 ... 3-3-50
+Child 1-3 created grandchildren: 1-3-26 ... 1-3-50
+Child 1-1 created grandchildren: 1-1-26 ... 1-1-50
+Child 18-2 created grandchildren: 18-2-1 ... 18-2-25
+Child 4-2 created grandchildren: 4-2-26 ... 4-2-50
+Child 2-3 created grandchildren: 2-3-26 ... 2-3-50
+Child 2-2 created grandchildren: 2-2-26 ... 2-2-50
+Child 8-1 created grandchildren: 8-1-26 ... 8-1-50
+Child 6-3 created grandchildren: 6-3-26 ... 6-3-50
+Child 7-1 created grandchildren: 7-1-26 ... 7-1-50
+Child 5-2 created grandchildren: 5-2-26 ... 5-2-50
+Child 17-1 created grandchildren: 17-1-26 ... 17-1-50
+Child 4-3 created grandchildren: 4-3-26 ... 4-3-50
+Child 7-2 created grandchildren: 7-2-26 ... 7-2-50
+Child 8-3 created grandchildren: 8-3-26 ... 8-3-50
+Child 6-2 created grandchildren: 6-2-26 ... 6-2-50
+Child 1-2 created grandchildren: 1-2-26 ... 1-2-50
+Child 9-1 created grandchildren: 9-1-26 ... 9-1-50
+Child 7-3 created grandchildren: 7-3-26 ... 7-3-50
+Child 11-1 created grandchildren: 11-1-26 ... 11-1-50
+Child 4-1 created grandchildren: 4-1-26 ... 4-1-50
+Child 10-1 created grandchildren: 10-1-26 ... 10-1-50
+Child 5-3 created grandchildren: 5-3-26 ... 5-3-50
+Child 6-1 created grandchildren: 6-1-26 ... 6-1-50
+Child 9-2 created grandchildren: 9-2-26 ... 9-2-50
+Child 8-2 created grandchildren: 8-2-26 ... 8-2-50
+Child 3-2 created grandchildren: 3-2-26 ... 3-2-50
+Child 2-1 created grandchildren: 2-1-26 ... 2-1-50
+Child 9-3 created grandchildren: 9-3-26 ... 9-3-50
+Child 13-1 created grandchildren: 13-1-26 ... 13-1-50
+Child 5-1 created grandchildren: 5-1-26 ... 5-1-50
+Child 14-1 created grandchildren: 14-1-26 ... 14-1-50
+Child 11-3 created grandchildren: 11-3-26 ... 11-3-50
+Child 18-1 created grandchildren: 18-1-26 ... 18-1-50
+Child 12-3 created grandchildren: 12-3-26 ... 12-3-50
+Child 15-1 created grandchildren: 15-1-26 ... 15-1-50
+Child 17-3 created grandchildren: 17-3-26 ... 17-3-50
+Child 12-2 created grandchildren: 12-2-26 ... 12-2-50
+Child 11-2 created grandchildren: 11-2-26 ... 11-2-50
+Child 10-3 created grandchildren: 10-3-26 ... 10-3-50
+Child 13-2 created grandchildren: 13-2-26 ... 13-2-50
+Child 17-2 created grandchildren: 17-2-26 ... 17-2-50
+Child 15-2 created grandchildren: 15-2-26 ... 15-2-50
+Child 10-2 created grandchildren: 10-2-26 ... 10-2-50
+Child 13-3 created grandchildren: 13-3-26 ... 13-3-50
+Child 14-2 created grandchildren: 14-2-26 ... 14-2-50
+Child 19-1 created grandchildren: 19-1-26 ... 19-1-50
+Child 19-3 created grandchildren: 19-3-26 ... 19-3-50
+Child 16-1 created grandchildren: 16-1-26 ... 16-1-50
+Child 16-2 created grandchildren: 16-2-26 ... 16-2-50
+Child 14-3 created grandchildren: 14-3-26 ... 14-3-50
+Child 19-2 created grandchildren: 19-2-26 ... 19-2-50
+Child 20-2 created grandchildren: 20-2-26 ... 20-2-50
+Child 3-1 created grandchildren: 3-1-51 ... 3-1-75
+Child 12-1 created grandchildren: 12-1-26 ... 12-1-50
+Child 15-3 created grandchildren: 15-3-26 ... 15-3-50
+Child 3-3 created grandchildren: 3-3-51 ... 3-3-75
+Child 18-3 created grandchildren: 18-3-26 ... 18-3-50
+Child 8-1 created grandchildren: 8-1-51 ... 8-1-75
+Child 20-1 created grandchildren: 20-1-26 ... 20-1-50
+Child 16-3 created grandchildren: 16-3-26 ... 16-3-50
+Child 20-3 created grandchildren: 20-3-26 ... 20-3-50
+Child 4-2 created grandchildren: 4-2-51 ... 4-2-75
+Child 1-1 created grandchildren: 1-1-51 ... 1-1-75
+Child 18-2 created grandchildren: 18-2-26 ... 18-2-50
+Child 1-2 created grandchildren: 1-2-51 ... 1-2-75
+Child 2-3 created grandchildren: 2-3-51 ... 2-3-75
+Child 4-1 created grandchildren: 4-1-51 ... 4-1-75
+Child 8-3 created grandchildren: 8-3-51 ... 8-3-75
+Child 2-2 created grandchildren: 2-2-51 ... 2-2-75
+Child 1-3 created grandchildren: 1-3-51 ... 1-3-75
+Child 6-3 created grandchildren: 6-3-51 ... 6-3-75
+Child 7-2 created grandchildren: 7-2-51 ... 7-2-75
+Child 7-1 created grandchildren: 7-1-51 ... 7-1-75
+Child 11-1 created grandchildren: 11-1-51 ... 11-1-75
+Child 4-3 created grandchildren: 4-3-51 ... 4-3-75
+Child 17-3 created grandchildren: 17-3-51 ... 17-3-75
+Child 5-3 created grandchildren: 5-3-51 ... 5-3-75
+Child 5-2 created grandchildren: 5-2-51 ... 5-2-75
+Child 10-1 created grandchildren: 10-1-51 ... 10-1-75
+Child 7-3 created grandchildren: 7-3-51 ... 7-3-75
+Child 9-2 created grandchildren: 9-2-51 ... 9-2-75
+Child 3-2 created grandchildren: 3-2-51 ... 3-2-75
+Child 6-2 created grandchildren: 6-2-51 ... 6-2-75
+Child 9-3 created grandchildren: 9-3-51 ... 9-3-75
+Child 11-3 created grandchildren: 11-3-51 ... 11-3-75
+Child 6-1 created grandchildren: 6-1-51 ... 6-1-75
+Child 5-1 created grandchildren: 5-1-51 ... 5-1-75
+Child 8-2 created grandchildren: 8-2-51 ... 8-2-75
+Child 18-1 created grandchildren: 18-1-51 ... 18-1-75
+Child 13-1 created grandchildren: 13-1-51 ... 13-1-75
+Child 12-2 created grandchildren: 12-2-51 ... 12-2-75
+Child 15-2 created grandchildren: 15-2-51 ... 15-2-75
+Child 17-2 created grandchildren: 17-2-51 ... 17-2-75
+Child 17-1 created grandchildren: 17-1-51 ... 17-1-75
+Child 2-1 created grandchildren: 2-1-51 ... 2-1-75
+Child 9-1 created grandchildren: 9-1-51 ... 9-1-75
+Child 14-1 created grandchildren: 14-1-51 ... 14-1-75
+Child 12-3 created grandchildren: 12-3-51 ... 12-3-75
+Child 11-2 created grandchildren: 11-2-51 ... 11-2-75
+Child 13-2 created grandchildren: 13-2-51 ... 13-2-75
+Child 19-1 created grandchildren: 19-1-51 ... 19-1-75
+Child 19-2 created grandchildren: 19-2-51 ... 19-2-75
+Child 15-1 created grandchildren: 15-1-51 ... 15-1-75
+Child 14-2 created grandchildren: 14-2-51 ... 14-2-75
+Child 15-3 created grandchildren: 15-3-51 ... 15-3-75
+Child 13-3 created grandchildren: 13-3-51 ... 13-3-75
+Child 16-1 created grandchildren: 16-1-51 ... 16-1-75
+Child 16-2 created grandchildren: 16-2-51 ... 16-2-75
+Child 20-2 created grandchildren: 20-2-51 ... 20-2-75
+Child 10-2 created grandchildren: 10-2-51 ... 10-2-75
+Child 12-1 created grandchildren: 12-1-51 ... 12-1-75
+Child 14-3 created grandchildren: 14-3-51 ... 14-3-75
+Child 10-3 created grandchildren: 10-3-51 ... 10-3-75
+Child 19-3 created grandchildren: 19-3-51 ... 19-3-75
+Child 20-1 created grandchildren: 20-1-51 ... 20-1-75
+Child 16-3 created grandchildren: 16-3-51 ... 16-3-75
+Child 20-3 created grandchildren: 20-3-51 ... 20-3-75
+Child 18-3 created grandchildren: 18-3-51 ... 18-3-75
+Child 18-2 created grandchildren: 18-2-51 ... 18-2-75
+Child 12-2 joined grandchildren: 12-2-1 ... 12-2-82
+Child 12-2 completed
+Child 4-3 joined grandchildren: 4-3-1 ... 4-3-82
+Child 4-3 completed
+Child 17-3 joined grandchildren: 17-3-1 ... 17-3-82
+Child 17-3 completed
+Child 19-3 joined grandchildren: 19-3-1 ... 19-3-82
+Child 19-3 completed
+Child 5-3 joined grandchildren: 5-3-1 ... 5-3-82
+Child 5-3 completed
+Child 9-3 joined grandchildren: 9-3-1 ... 9-3-82
+Child 9-3 completed
+Child 19-1 joined grandchildren: 19-1-1 ... 19-1-82
+Child 19-1 completed
+Child 15-2 joined grandchildren: 15-2-1 ... 15-2-82
+Child 15-2 completed
+Child 9-2 joined grandchildren: 9-2-1 ... 9-2-82
+Child 9-2 completed
+Child 11-3 joined grandchildren: 11-3-1 ... 11-3-82
+Child 11-3 completed
+Child 7-2 joined grandchildren: 7-2-1 ... 7-2-82
+Child 7-2 completed
+Child 17-1 joined grandchildren: 17-1-1 ... 17-1-82
+Child 17-1 completed
+Child 16-3 joined grandchildren: 16-3-1 ... 16-3-82
+Child 16-3 completed
+Child 10-1 joined grandchildren: 10-1-1 ... 10-1-82
+Child 10-1 completed
+Child 20-2 joined grandchildren: 20-2-1 ... 20-2-82
+Child 20-2 completed
+Child 5-2 joined grandchildren: 5-2-1 ... 5-2-82
+Child 5-2 completed
+Child 18-1 joined grandchildren: 18-1-1 ... 18-1-82
+Child 18-1 completed
+Child 17-2 joined grandchildren: 17-2-1 ... 17-2-82
+Child 17-2 completed
+Child 3-3 joined grandchildren: 3-3-1 ... 3-3-82
+Child 3-3 completed
+Child 20-3 joined grandchildren: 20-3-1 ... 20-3-82
+Child 20-3 completed
+Initial 17 completed
+Child 6-1 joined grandchildren: 6-1-1 ... 6-1-82
+Child 6-1 completed
+Child 12-1 joined grandchildren: 12-1-1 ... 12-1-82
+Child 12-1 completed
+Child 15-1 joined grandchildren: 15-1-1 ... 15-1-82
+Child 15-1 completed
+Child 10-2 joined grandchildren: 10-2-1 ... 10-2-82
+Child 10-2 completed
+Child 13-3 joined grandchildren: 13-3-1 ... 13-3-82
+Child 13-3 completed
+Child 3-1 joined grandchildren: 3-1-1 ... 3-1-82
+Child 3-1 completed
+Child 12-3 joined grandchildren: 12-3-1 ... 12-3-82
+Child 12-3 completed
+Child 8-2 joined grandchildren: 8-2-1 ... 8-2-82
+Child 8-2 completed
+Child 9-1 joined grandchildren: 9-1-1 ... 9-1-82
+Child 9-1 completed
+Initial 12 completed
+Child 2-2 joined grandchildren: 2-2-1 ... 2-2-82
+Child 2-2 completed
+Initial 9 completed
+Child 2-1 joined grandchildren: 2-1-1 ... 2-1-82
+Child 2-1 completed
+Child 10-3 joined grandchildren: 10-3-1 ... 10-3-82
+Child 10-3 completed
+Child 8-1 joined grandchildren: 8-1-1 ... 8-1-82
+Child 8-1 completed
+Initial 10 completed
+Child 4-1 joined grandchildren: 4-1-1 ... 4-1-82
+Child 4-1 completed
+Child 18-2 joined grandchildren: 18-2-1 ... 18-2-82
+Child 18-2 completed
+Child 6-2 joined grandchildren: 6-2-1 ... 6-2-82
+Child 6-2 completed
+Child 13-2 joined grandchildren: 13-2-1 ... 13-2-82
+Child 13-2 completed
+Child 1-1 joined grandchildren: 1-1-1 ... 1-1-82
+Child 1-1 completed
+Child 1-2 joined grandchildren: 1-2-1 ... 1-2-82
+Child 1-2 completed
+Child 5-1 joined grandchildren: 5-1-1 ... 5-1-82
+Child 5-1 completed
+Child 16-1 joined grandchildren: 16-1-1 ... 16-1-82
+Child 16-1 completed
+Child 8-3 joined grandchildren: 8-3-1 ... 8-3-82
+Child 8-3 completed
+Child 19-2 joined grandchildren: 19-2-1 ... 19-2-82
+Child 19-2 completed
+Initial 8 completed
+Child 6-3 joined grandchildren: 6-3-1 ... 6-3-82
+Child 6-3 completed
+Child 14-1 joined grandchildren: 14-1-1 ... 14-1-82
+Child 14-1 completed
+Initial 6 completed
+Initial 19 completed
+Initial 5 completed
+Child 15-3 joined grandchildren: 15-3-1 ... 15-3-82
+Child 15-3 completed
+Child 4-2 joined grandchildren: 4-2-1 ... 4-2-82
+Child 4-2 completed
+Child 11-1 joined grandchildren: 11-1-1 ... 11-1-82
+Child 11-1 completed
+Child 2-3 joined grandchildren: 2-3-1 ... 2-3-82
+Child 2-3 completed
+Initial 15 completed
+Initial 2 completed
+Initial 4 completed
+Child 7-1 joined grandchildren: 7-1-1 ... 7-1-82
+Child 7-1 completed
+Child 14-2 joined grandchildren: 14-2-1 ... 14-2-82
+Child 14-2 completed
+Child 3-2 joined grandchildren: 3-2-1 ... 3-2-82
+Child 3-2 completed
+Child 7-3 joined grandchildren: 7-3-1 ... 7-3-82
+Child 7-3 completed
+Initial 3 completed
+Initial 7 completed
+Child 11-2 joined grandchildren: 11-2-1 ... 11-2-82
+Child 11-2 completed
+Child 16-2 joined grandchildren: 16-2-1 ... 16-2-82
+Child 16-2 completed
+Child 20-1 joined grandchildren: 20-1-1 ... 20-1-82
+Child 20-1 completed
+Initial 11 completed
+Initial 16 completed
+Child 13-1 joined grandchildren: 13-1-1 ... 13-1-82
+Child 13-1 completed
+Child 1-3 joined grandchildren: 1-3-1 ... 1-3-82
+Child 1-3 completed
+Child 18-3 joined grandchildren: 18-3-1 ... 18-3-82
+Child 18-3 completed
+Initial 20 completed
+Initial 1 completed
+Initial 13 completed
+Initial 18 completed
+Child 14-3 joined grandchildren: 14-3-1 ... 14-3-82
+Child 14-3 completed
+Initial 14 completed
+2.c elapsed: 484.440 ms
+Threads created:   5000
+Threads destroyed: 5000
+Trial 1:
+
+=== 2.a Flat (no batching) ===
+Created threads: 1-1000
+Created threads: 1001-2000
+Created threads: 2001-3000
+Created threads: 3001-4000
+Created threads: 4001-5000
+Joined threads: 1-1000
+Joined threads: 1001-2000
+Joined threads: 2001-3000
+Joined threads: 3001-4000
+Joined threads: 4001-5000
+2.a elapsed: 405.885 ms
+Threads created:   5000
+Threads destroyed: 5000
+
+=== 2.b Two-level (no batching) ===
+Parent 1 started
+Parent 2 started
+Parent 3 started
+Parent 4 started
+Parent 5 started
+Parent 6 started
+Parent 7 started
+Parent 8 started
+Parent 9 started
+Parent 10 started
+Parent 11 started
+Parent 12 started
+Parent 13 started
+Parent 14 started
+Parent 15 started
+Parent 16 started
+Parent 17 started
+Parent 18 started
+Parent 19 started
+Parent 20 started
+Parent 21 started
+Parent 22 started
+Parent 23 started
+Parent 24 started
+Parent 25 started
+Parent 1 created children: 1-1 ... 1-25
+Parent 26 started
+Parent 27 started
+Parent 2 created children: 2-1 ... 2-25
+Parent 6 created children: 6-1 ... 6-25
+Parent 4 created children: 4-1 ... 4-25
+Parent 28 started
+Parent 3 created children: 3-1 ... 3-25
+Parent 29 started
+Parent 30 started
+Parent 31 started
+Parent 8 created children: 8-1 ... 8-25
+Parent 32 started
+Parent 7 created children: 7-1 ... 7-25
+Parent 33 started
+Parent 5 created children: 5-1 ... 5-25
+Parent 11 created children: 11-1 ... 11-25
+Parent 34 started
+Parent 35 started
+Parent 9 created children: 9-1 ... 9-25
+Parent 13 created children: 13-1 ... 13-25
+Parent 36 started
+Parent 37 started
+Parent 14 created children: 14-1 ... 14-25
+Parent 10 created children: 10-1 ... 10-25
+Parent 38 started
+Parent 15 created children: 15-1 ... 15-25
+Parent 39 started
+Parent 12 created children: 12-1 ... 12-25
+Parent 40 started
+Parent 41 started
+Parent 17 created children: 17-1 ... 17-25
+Parent 42 started
+Parent 19 created children: 19-1 ... 19-25
+Parent 16 created children: 16-1 ... 16-25
+Parent 43 started
+Parent 21 created children: 21-1 ... 21-25
+Parent 44 started
+Parent 20 created children: 20-1 ... 20-25
+Parent 23 created children: 23-1 ... 23-25
+Parent 45 started
+Parent 18 created children: 18-1 ... 18-25
+Parent 46 started
+Parent 47 started
+Parent 24 created children: 24-1 ... 24-25
+Parent 22 created children: 22-1 ... 22-25
+Parent 48 started
+Parent 25 created children: 25-1 ... 25-25
+Parent 49 started
+Parent 1 created children: 1-26 ... 1-50
+Parent 50 started
+Parent 27 created children: 27-1 ... 27-25
+Parent 29 created children: 29-1 ... 29-25
+Parent 3 created children: 3-26 ... 3-50
+Parent 6 created children: 6-26 ... 6-50
+Parent 2 created children: 2-26 ... 2-50
+Parent 26 created children: 26-1 ... 26-25
+Parent 32 created children: 32-1 ... 32-25
+Parent 31 created children: 31-1 ... 31-25
+Parent 4 created children: 4-26 ... 4-50
+Parent 8 created children: 8-26 ... 8-50
+Parent 28 created children: 28-1 ... 28-25
+Parent 33 created children: 33-1 ... 33-25
+Parent 5 created children: 5-26 ... 5-50
+Parent 7 created children: 7-26 ... 7-50
+Parent 30 created children: 30-1 ... 30-25
+Parent 11 created children: 11-26 ... 11-50
+Parent 9 created children: 9-26 ... 9-50
+Parent 15 created children: 15-26 ... 15-50
+Parent 13 created children: 13-26 ... 13-50
+Parent 34 created children: 34-1 ... 34-25
+Parent 35 created children: 35-1 ... 35-25
+Parent 37 created children: 37-1 ... 37-25
+Parent 14 created children: 14-26 ... 14-50
+Parent 36 created children: 36-1 ... 36-25
+Parent 39 created children: 39-1 ... 39-25
+Parent 10 created children: 10-26 ... 10-50
+Parent 12 created children: 12-26 ... 12-50
+Parent 43 created children: 43-1 ... 43-25
+Parent 38 created children: 38-1 ... 38-25
+Parent 40 created children: 40-1 ... 40-25
+Parent 20 created children: 20-26 ... 20-50
+Parent 42 created children: 42-1 ... 42-25
+Parent 19 created children: 19-26 ... 19-50
+Parent 17 created children: 17-26 ... 17-50
+Parent 41 created children: 41-1 ... 41-25
+Parent 16 created children: 16-26 ... 16-50
+Parent 21 created children: 21-26 ... 21-50
+Parent 23 created children: 23-26 ... 23-50
+Parent 44 created children: 44-1 ... 44-25
+Parent 47 created children: 47-1 ... 47-25
+Parent 45 created children: 45-1 ... 45-25
+Parent 46 created children: 46-1 ... 46-25
+Parent 29 created children: 29-26 ... 29-50
+Parent 22 created children: 22-26 ... 22-50
+Parent 1 created children: 1-51 ... 1-75
+Parent 49 created children: 49-1 ... 49-25
+Parent 18 created children: 18-26 ... 18-50
+Parent 25 created children: 25-26 ... 25-50
+Parent 26 created children: 26-26 ... 26-50
+Parent 24 created children: 24-26 ... 24-50
+Parent 50 created children: 50-1 ... 50-25
+Parent 31 created children: 31-26 ... 31-50
+Parent 8 created children: 8-51 ... 8-75
+Parent 2 created children: 2-51 ... 2-75
+Parent 4 created children: 4-51 ... 4-75
+Parent 48 created children: 48-1 ... 48-25
+Parent 28 created children: 28-26 ... 28-50
+Parent 3 created children: 3-51 ... 3-75
+Parent 27 created children: 27-26 ... 27-50
+Parent 32 created children: 32-26 ... 32-50
+Parent 6 created children: 6-51 ... 6-75
+Parent 30 created children: 30-26 ... 30-50
+Parent 5 created children: 5-51 ... 5-75
+Parent 9 created children: 9-51 ... 9-75
+Parent 15 created children: 15-51 ... 15-75
+Parent 13 created children: 13-51 ... 13-75
+Parent 7 created children: 7-51 ... 7-75
+Parent 11 created children: 11-51 ... 11-75
+Parent 34 created children: 34-26 ... 34-50
+Parent 35 created children: 35-26 ... 35-50
+Parent 33 created children: 33-26 ... 33-50
+Parent 39 created children: 39-26 ... 39-50
+Parent 37 created children: 37-26 ... 37-50
+Parent 36 created children: 36-26 ... 36-50
+Parent 12 created children: 12-51 ... 12-75
+Parent 19 created children: 19-51 ... 19-75
+Parent 10 created children: 10-51 ... 10-75
+Parent 14 created children: 14-51 ... 14-75
+Parent 42 created children: 42-26 ... 42-50
+Parent 21 created children: 21-51 ... 21-75
+Parent 20 created children: 20-51 ... 20-75
+Parent 38 created children: 38-26 ... 38-50
+Parent 43 created children: 43-26 ... 43-50
+Parent 40 created children: 40-26 ... 40-50
+Parent 17 created children: 17-51 ... 17-75
+Parent 47 created children: 47-26 ... 47-50
+Parent 16 created children: 16-51 ... 16-75
+Parent 41 created children: 41-26 ... 41-50
+Parent 44 created children: 44-26 ... 44-50
+Parent 23 created children: 23-51 ... 23-75
+Parent 45 created children: 45-26 ... 45-50
+Parent 29 created children: 29-51 ... 29-75
+Parent 46 created children: 46-26 ... 46-50
+Parent 22 created children: 22-51 ... 22-75
+Parent 25 created children: 25-51 ... 25-75
+Parent 26 created children: 26-51 ... 26-75
+Parent 31 created children: 31-51 ... 31-75
+Parent 49 created children: 49-26 ... 49-50
+Parent 24 created children: 24-51 ... 24-75
+Parent 18 created children: 18-51 ... 18-75
+Parent 28 created children: 28-51 ... 28-75
+Parent 50 created children: 50-26 ... 50-50
+Parent 30 created children: 30-51 ... 30-75
+Parent 32 created children: 32-51 ... 32-75
+Parent 27 created children: 27-51 ... 27-75
+Parent 48 created children: 48-26 ... 48-50
+Parent 35 created children: 35-51 ... 35-75
+Parent 42 created children: 42-51 ... 42-75
+Parent 47 created children: 47-51 ... 47-75
+Parent 39 created children: 39-51 ... 39-75
+Parent 34 created children: 34-51 ... 34-75
+Parent 36 created children: 36-51 ... 36-75
+Parent 33 created children: 33-51 ... 33-75
+Parent 38 created children: 38-51 ... 38-75
+Parent 37 created children: 37-51 ... 37-75
+Parent 44 created children: 44-51 ... 44-75
+Parent 41 created children: 41-51 ... 41-75
+Parent 43 created children: 43-51 ... 43-75
+Parent 46 created children: 46-51 ... 46-75
+Parent 40 created children: 40-51 ... 40-75
+Parent 45 created children: 45-51 ... 45-75
+Parent 49 created children: 49-51 ... 49-75
+Parent 50 created children: 50-51 ... 50-75
+Parent 48 created children: 48-51 ... 48-75
+2.b elapsed: 446.714 ms
+Threads created:   5000
+Threads destroyed: 5000
+
+=== 2.c Three-level (no batching) ===
+Initial 1 started
+Initial 2 started
+Initial 1 created child: 1-1
+Initial 3 started
+Initial 2 created child: 2-1
+Initial 2 created child: 2-2
+Initial 4 started
+Initial 3 created child: 3-1
+Initial 1 created child: 1-2
+Initial 2 created child: 2-3
+Initial 5 started
+Initial 4 created child: 4-1
+Initial 3 created child: 3-2
+Initial 1 created child: 1-3
+Initial 6 started
+Initial 4 created child: 4-2
+Initial 3 created child: 3-3
+Initial 5 created child: 5-1
+Initial 6 created child: 6-1
+Initial 7 started
+Initial 4 created child: 4-3
+Initial 5 created child: 5-2
+Initial 6 created child: 6-2
+Initial 8 started
+Initial 7 created child: 7-1
+Initial 5 created child: 5-3
+Initial 6 created child: 6-3
+Initial 9 started
+Initial 8 created child: 8-1
+Initial 7 created child: 7-2
+Initial 10 started
+Initial 9 created child: 9-1
+Initial 10 created child: 10-1
+Initial 8 created child: 8-2
+Initial 7 created child: 7-3
+Initial 11 started
+Initial 9 created child: 9-2
+Initial 8 created child: 8-3
+Initial 11 created child: 11-1
+Initial 9 created child: 9-3
+Initial 12 started
+Initial 10 created child: 10-2
+Initial 11 created child: 11-2
+Initial 13 started
+Initial 12 created child: 12-1
+Initial 11 created child: 11-3
+Initial 10 created child: 10-3
+Initial 12 created child: 12-2
+Initial 14 started
+Initial 13 created child: 13-1
+Initial 13 created child: 13-2
+Initial 14 created child: 14-1
+Initial 12 created child: 12-3
+Initial 13 created child: 13-3
+Initial 15 started
+Initial 14 created child: 14-2
+Initial 15 created child: 15-1
+Initial 14 created child: 14-3
+Initial 16 started
+Initial 15 created child: 15-2
+Initial 16 created child: 16-1
+Initial 15 created child: 15-3
+Initial 17 started
+Initial 16 created child: 16-2
+Initial 18 started
+Initial 16 created child: 16-3
+Initial 17 created child: 17-1
+Initial 17 created child: 17-2
+Initial 18 created child: 18-1
+Initial 19 started
+Initial 17 created child: 17-3
+Initial 20 started
+Initial 18 created child: 18-2
+Initial 18 created child: 18-3
+Initial 19 created child: 19-1
+Child 1-1 created grandchildren: 1-1-1 ... 1-1-25
+Child 3-1 created grandchildren: 3-1-1 ... 3-1-25
+Child 2-3 created grandchildren: 2-3-1 ... 2-3-25
+Initial 20 created child: 20-1
+Initial 20 created child: 20-2
+Child 2-1 created grandchildren: 2-1-1 ... 2-1-25
+Initial 19 created child: 19-2
+Initial 20 created child: 20-3
+Child 2-2 created grandchildren: 2-2-1 ... 2-2-25
+Child 3-2 created grandchildren: 3-2-1 ... 3-2-25
+Initial 19 created child: 19-3
+Child 5-3 created grandchildren: 5-3-1 ... 5-3-25
+Child 6-3 created grandchildren: 6-3-1 ... 6-3-25
+Child 1-2 created grandchildren: 1-2-1 ... 1-2-25
+Child 1-3 created grandchildren: 1-3-1 ... 1-3-25
+Child 4-2 created grandchildren: 4-2-1 ... 4-2-25
+Child 7-1 created grandchildren: 7-1-1 ... 7-1-25
+Child 5-1 created grandchildren: 5-1-1 ... 5-1-25
+Child 3-3 created grandchildren: 3-3-1 ... 3-3-25
+Child 5-2 created grandchildren: 5-2-1 ... 5-2-25
+Child 4-1 created grandchildren: 4-1-1 ... 4-1-25
+Child 6-1 created grandchildren: 6-1-1 ... 6-1-25
+Child 10-1 created grandchildren: 10-1-1 ... 10-1-25
+Child 8-3 created grandchildren: 8-3-1 ... 8-3-25
+Child 8-1 created grandchildren: 8-1-1 ... 8-1-25
+Child 8-2 created grandchildren: 8-2-1 ... 8-2-25
+Child 4-3 created grandchildren: 4-3-1 ... 4-3-25
+Child 12-2 created grandchildren: 12-2-1 ... 12-2-25
+Child 7-2 created grandchildren: 7-2-1 ... 7-2-25
+Child 9-2 created grandchildren: 9-2-1 ... 9-2-25
+Child 11-3 created grandchildren: 11-3-1 ... 11-3-25
+Child 13-1 created grandchildren: 13-1-1 ... 13-1-25
+Child 11-1 created grandchildren: 11-1-1 ... 11-1-25
+Child 9-3 created grandchildren: 9-3-1 ... 9-3-25
+Child 13-3 created grandchildren: 13-3-1 ... 13-3-25
+Child 11-2 created grandchildren: 11-2-1 ... 11-2-25
+Child 9-1 created grandchildren: 9-1-1 ... 9-1-25
+Child 6-2 created grandchildren: 6-2-1 ... 6-2-25
+Child 14-1 created grandchildren: 14-1-1 ... 14-1-25
+Child 13-2 created grandchildren: 13-2-1 ... 13-2-25
+Child 7-3 created grandchildren: 7-3-1 ... 7-3-25
+Child 12-1 created grandchildren: 12-1-1 ... 12-1-25
+Child 12-3 created grandchildren: 12-3-1 ... 12-3-25
+Child 15-2 created grandchildren: 15-2-1 ... 15-2-25
+Child 14-2 created grandchildren: 14-2-1 ... 14-2-25
+Child 14-3 created grandchildren: 14-3-1 ... 14-3-25
+Child 10-3 created grandchildren: 10-3-1 ... 10-3-25
+Child 15-3 created grandchildren: 15-3-1 ... 15-3-25
+Child 15-1 created grandchildren: 15-1-1 ... 15-1-25
+Child 17-1 created grandchildren: 17-1-1 ... 17-1-25
+Child 16-1 created grandchildren: 16-1-1 ... 16-1-25
+Child 10-2 created grandchildren: 10-2-1 ... 10-2-25
+Child 16-2 created grandchildren: 16-2-1 ... 16-2-25
+Child 17-2 created grandchildren: 17-2-1 ... 17-2-25
+Child 19-1 created grandchildren: 19-1-1 ... 19-1-25
+Child 18-1 created grandchildren: 18-1-1 ... 18-1-25
+Child 20-2 created grandchildren: 20-2-1 ... 20-2-25
+Child 16-3 created grandchildren: 16-3-1 ... 16-3-25
+Child 17-3 created grandchildren: 17-3-1 ... 17-3-25
+Child 3-1 created grandchildren: 3-1-26 ... 3-1-50
+Child 2-3 created grandchildren: 2-3-26 ... 2-3-50
+Child 18-3 created grandchildren: 18-3-1 ... 18-3-25
+Child 2-1 created grandchildren: 2-1-26 ... 2-1-50
+Child 3-2 created grandchildren: 3-2-26 ... 3-2-50
+Child 4-1 created grandchildren: 4-1-26 ... 4-1-50
+Child 6-3 created grandchildren: 6-3-26 ... 6-3-50
+Child 5-2 created grandchildren: 5-2-26 ... 5-2-50
+Child 5-3 created grandchildren: 5-3-26 ... 5-3-50
+Child 19-2 created grandchildren: 19-2-1 ... 19-2-25
+Child 19-3 created grandchildren: 19-3-1 ... 19-3-25
+Child 18-2 created grandchildren: 18-2-1 ... 18-2-25
+Child 1-3 created grandchildren: 1-3-26 ... 1-3-50
+Child 20-1 created grandchildren: 20-1-1 ... 20-1-25
+Child 20-3 created grandchildren: 20-3-1 ... 20-3-25
+Child 1-1 created grandchildren: 1-1-26 ... 1-1-50
+Child 7-1 created grandchildren: 7-1-26 ... 7-1-50
+Child 8-3 created grandchildren: 8-3-26 ... 8-3-50
+Child 5-1 created grandchildren: 5-1-26 ... 5-1-50
+Child 2-2 created grandchildren: 2-2-26 ... 2-2-50
+Child 11-3 created grandchildren: 11-3-26 ... 11-3-50
+Child 8-2 created grandchildren: 8-2-26 ... 8-2-50
+Child 10-1 created grandchildren: 10-1-26 ... 10-1-50
+Child 3-3 created grandchildren: 3-3-26 ... 3-3-50
+Child 12-2 created grandchildren: 12-2-26 ... 12-2-50
+Child 1-2 created grandchildren: 1-2-26 ... 1-2-50
+Child 9-2 created grandchildren: 9-2-26 ... 9-2-50
+Child 13-2 created grandchildren: 13-2-26 ... 13-2-50
+Child 9-3 created grandchildren: 9-3-26 ... 9-3-50
+Child 7-2 created grandchildren: 7-2-26 ... 7-2-50
+Child 6-1 created grandchildren: 6-1-26 ... 6-1-50
+Child 4-2 created grandchildren: 4-2-26 ... 4-2-50
+Child 12-3 created grandchildren: 12-3-26 ... 12-3-50
+Child 7-3 created grandchildren: 7-3-26 ... 7-3-50
+Child 13-1 created grandchildren: 13-1-26 ... 13-1-50
+Child 13-3 created grandchildren: 13-3-26 ... 13-3-50
+Child 4-3 created grandchildren: 4-3-26 ... 4-3-50
+Child 14-1 created grandchildren: 14-1-26 ... 14-1-50
+Child 8-1 created grandchildren: 8-1-26 ... 8-1-50
+Child 14-2 created grandchildren: 14-2-26 ... 14-2-50
+Child 11-2 created grandchildren: 11-2-26 ... 11-2-50
+Child 11-1 created grandchildren: 11-1-26 ... 11-1-50
+Child 12-1 created grandchildren: 12-1-26 ... 12-1-50
+Child 6-2 created grandchildren: 6-2-26 ... 6-2-50
+Child 15-1 created grandchildren: 15-1-26 ... 15-1-50
+Child 15-2 created grandchildren: 15-2-26 ... 15-2-50
+Child 15-3 created grandchildren: 15-3-26 ... 15-3-50
+Child 9-1 created grandchildren: 9-1-26 ... 9-1-50
+Child 10-3 created grandchildren: 10-3-26 ... 10-3-50
+Child 10-2 created grandchildren: 10-2-26 ... 10-2-50
+Child 17-1 created grandchildren: 17-1-26 ... 17-1-50
+Child 14-3 created grandchildren: 14-3-26 ... 14-3-50
+Child 17-2 created grandchildren: 17-2-26 ... 17-2-50
+Child 2-3 created grandchildren: 2-3-51 ... 2-3-75
+Child 5-2 created grandchildren: 5-2-51 ... 5-2-75
+Child 6-3 created grandchildren: 6-3-51 ... 6-3-75
+Child 17-3 created grandchildren: 17-3-26 ... 17-3-50
+Child 18-1 created grandchildren: 18-1-26 ... 18-1-50
+Child 20-2 created grandchildren: 20-2-26 ... 20-2-50
+Child 16-2 created grandchildren: 16-2-26 ... 16-2-50
+Child 2-1 created grandchildren: 2-1-51 ... 2-1-75
+Child 3-1 created grandchildren: 3-1-51 ... 3-1-75
+Child 16-1 created grandchildren: 16-1-26 ... 16-1-50
+Child 16-3 created grandchildren: 16-3-26 ... 16-3-50
+Child 3-2 created grandchildren: 3-2-51 ... 3-2-75
+Child 19-1 created grandchildren: 19-1-26 ... 19-1-50
+Child 4-1 created grandchildren: 4-1-51 ... 4-1-75
+Child 20-1 created grandchildren: 20-1-26 ... 20-1-50
+Child 19-3 created grandchildren: 19-3-26 ... 19-3-50
+Child 7-1 created grandchildren: 7-1-51 ... 7-1-75
+Child 20-3 created grandchildren: 20-3-26 ... 20-3-50
+Child 18-3 created grandchildren: 18-3-26 ... 18-3-50
+Child 2-2 created grandchildren: 2-2-51 ... 2-2-75
+Child 19-2 created grandchildren: 19-2-26 ... 19-2-50
+Child 8-3 created grandchildren: 8-3-51 ... 8-3-75
+Child 1-3 created grandchildren: 1-3-51 ... 1-3-75Child 5-3 created grandchildren: 5-3-51 ... 5-3-75
+Child 1-1 created grandchildren: 1-1-51 ... 1-1-75
+
+Child 12-2 created grandchildren: 12-2-51 ... 12-2-75
+Child 3-3 created grandchildren: 3-3-51 ... 3-3-75
+Child 8-2 created grandchildren: 8-2-51 ... 8-2-75
+Child 13-2 created grandchildren: 13-2-51 ... 13-2-75
+Child 12-3 created grandchildren: 12-3-51 ... 12-3-75
+Child 10-1 created grandchildren: 10-1-51 ... 10-1-75
+Child 6-1 created grandchildren: 6-1-51 ... 6-1-75
+Child 18-2 created grandchildren: 18-2-26 ... 18-2-50
+Child 11-3 created grandchildren: 11-3-51 ... 11-3-75
+Child 11-2 created grandchildren: 11-2-51 ... 11-2-75
+Child 9-3 created grandchildren: 9-3-51 ... 9-3-75
+Child 7-2 created grandchildren: 7-2-51 ... 7-2-75
+Child 14-1 created grandchildren: 14-1-51 ... 14-1-75
+Child 5-1 created grandchildren: 5-1-51 ... 5-1-75
+Child 1-2 created grandchildren: 1-2-51 ... 1-2-75
+Child 13-1 created grandchildren: 13-1-51 ... 13-1-75
+Child 7-3 created grandchildren: 7-3-51 ... 7-3-75
+Child 4-2 created grandchildren: 4-2-51 ... 4-2-75
+Child 4-3 created grandchildren: 4-3-51 ... 4-3-75
+Child 14-2 created grandchildren: 14-2-51 ... 14-2-75
+Child 13-3 created grandchildren: 13-3-51 ... 13-3-75
+Child 17-1 created grandchildren: 17-1-51 ... 17-1-75
+Child 9-2 created grandchildren: 9-2-51 ... 9-2-75
+Child 11-1 created grandchildren: 11-1-51 ... 11-1-75
+Child 8-1 created grandchildren: 8-1-51 ... 8-1-75
+Child 12-1 created grandchildren: 12-1-51 ... 12-1-75
+Child 15-2 created grandchildren: 15-2-51 ... 15-2-75
+Child 10-2 created grandchildren: 10-2-51 ... 10-2-75
+Child 9-1 created grandchildren: 9-1-51 ... 9-1-75
+Child 20-2 created grandchildren: 20-2-51 ... 20-2-75
+Child 15-3 created grandchildren: 15-3-51 ... 15-3-75
+Child 10-3 created grandchildren: 10-3-51 ... 10-3-75
+Child 20-1 created grandchildren: 20-1-51 ... 20-1-75
+Child 15-1 created grandchildren: 15-1-51 ... 15-1-75
+Child 6-2 created grandchildren: 6-2-51 ... 6-2-75
+Child 17-3 created grandchildren: 17-3-51 ... 17-3-75
+Child 18-1 created grandchildren: 18-1-51 ... 18-1-75
+Child 20-3 created grandchildren: 20-3-51 ... 20-3-75
+Child 14-3 created grandchildren: 14-3-51 ... 14-3-75
+Child 16-1 created grandchildren: 16-1-51 ... 16-1-75
+Child 16-3 created grandchildren: 16-3-51 ... 16-3-75
+Child 17-2 created grandchildren: 17-2-51 ... 17-2-75
+Child 16-2 created grandchildren: 16-2-51 ... 16-2-75
+Child 19-2 created grandchildren: 19-2-51 ... 19-2-75
+Child 19-1 created grandchildren: 19-1-51 ... 19-1-75
+Child 19-3 created grandchildren: 19-3-51 ... 19-3-75
+Child 18-2 created grandchildren: 18-2-51 ... 18-2-75
+Child 2-3 joined grandchildren: 2-3-1 ... 2-3-82
+Child 2-3 completed
+Child 18-3 created grandchildren: 18-3-51 ... 18-3-75
+Child 6-3 joined grandchildren: 6-3-1 ... 6-3-82
+Child 6-3 completed
+Child 5-2 joined grandchildren: 5-2-1 ... 5-2-82
+Child 5-2 completed
+Child 2-1 joined grandchildren: 2-1-1 ... 2-1-82
+Child 2-1 completed
+Child 4-1 joined grandchildren: 4-1-1 ... 4-1-82
+Child 4-1 completed
+Child 9-1 joined grandchildren: 9-1-1 ... 9-1-82
+Child 9-1 completed
+Child 5-1 joined grandchildren: 5-1-1 ... 5-1-82
+Child 5-1 completed
+Child 1-3 joined grandchildren: 1-3-1 ... 1-3-82
+Child 1-3 completed
+Child 7-3 joined grandchildren: 7-3-1 ... 7-3-82
+Child 7-3 completed
+Child 16-2 joined grandchildren: 16-2-1 ... 16-2-82
+Child 16-2 completed
+Child 3-3 joined grandchildren: 3-3-1 ... 3-3-82
+Child 3-3 completed
+Child 6-1 joined grandchildren: 6-1-1 ... 6-1-82
+Child 6-1 completed
+Child 1-2 joined grandchildren: 1-2-1 ... 1-2-82
+Child 1-2 completed
+Child 14-3 joined grandchildren: 14-3-1 ... 14-3-82
+Child 14-3 completed
+Child 11-2 joined grandchildren: 11-2-1 ... 11-2-82
+Child 11-2 completed
+Child 10-1 joined grandchildren: 10-1-1 ... 10-1-82
+Child 10-1 completed
+Child 20-1 joined grandchildren: 20-1-1 ... 20-1-82
+Child 20-1 completed
+Child 11-3 joined grandchildren: 11-3-1 ... 11-3-82
+Child 11-3 completed
+Child 7-1 joined grandchildren: 7-1-1 ... 7-1-82
+Child 7-1 completed
+Child 13-3 joined grandchildren: 13-3-1 ... 13-3-82
+Child 13-3 completed
+Child 12-2 joined grandchildren: 12-2-1 ... 12-2-82
+Child 12-2 completed
+Child 17-3 joined grandchildren: 17-3-1 ... 17-3-82
+Child 17-3 completed
+Child 19-2 joined grandchildren: 19-2-1 ... 19-2-82
+Child 19-2 completed
+Child 20-2 joined grandchildren: 20-2-1 ... 20-2-82
+Child 20-2 completed
+Child 17-1 joined grandchildren: 17-1-1 ... 17-1-82
+Child 17-1 completed
+Child 2-2 joined grandchildren: 2-2-1 ... 2-2-82
+Child 2-2 completed
+Initial 2 completed
+Child 17-2 joined grandchildren: 17-2-1 ... 17-2-82
+Child 17-2 completed
+Child 4-3 joined grandchildren: 4-3-1 ... 4-3-82
+Child 4-3 completed
+Child 16-3 joined grandchildren: 16-3-1 ... 16-3-82
+Child 16-3 completed
+Child 8-3 joined grandchildren: 8-3-1 ... 8-3-82
+Child 8-3 completed
+Initial 17 completed
+Child 19-1 joined grandchildren: 19-1-1 ... 19-1-82
+Child 19-1 completed
+Child 1-1 joined grandchildren: 1-1-1 ... 1-1-82
+Child 1-1 completed
+Child 14-1 joined grandchildren: 14-1-1 ... 14-1-82
+Child 14-1 completed
+Child 15-1 joined grandchildren: 15-1-1 ... 15-1-82
+Child 15-1 completed
+Child 8-2 joined grandchildren: 8-2-1 ... 8-2-82
+Child 8-2 completed
+Initial 1 completed
+Child 15-2 joined grandchildren: 15-2-1 ... 15-2-82
+Child 15-2 completed
+Child 5-3 joined grandchildren: 5-3-1 ... 5-3-82
+Child 5-3 completed
+Child 3-2 joined grandchildren: 3-2-1 ... 3-2-82
+Child 3-2 completed
+Child 18-1 joined grandchildren: 18-1-1 ... 18-1-82
+Child 18-1 completed
+Child 9-3 joined grandchildren: 9-3-1 ... 9-3-82
+Child 9-3 completed
+Initial 5 completed
+Child 3-1 joined grandchildren: 3-1-1 ... 3-1-82
+Child 3-1 completed
+Child 14-2 joined grandchildren: 14-2-1 ... 14-2-82
+Child 14-2 completed
+Child 6-2 joined grandchildren: 6-2-1 ... 6-2-82
+Child 6-2 completed
+Initial 14 completed
+Initial 6 completed
+Child 18-3 joined grandchildren: 18-3-1 ... 18-3-82
+Child 18-3 completed
+Initial 3 completed
+Child 12-3 joined grandchildren: 12-3-1 ... 12-3-82
+Child 12-3 completed
+Child 13-2 joined grandchildren: 13-2-1 ... 13-2-82
+Child 13-2 completed
+Child 13-1 joined grandchildren: 13-1-1 ... 13-1-82
+Child 13-1 completed
+Child 11-1 joined grandchildren: 11-1-1 ... 11-1-82
+Child 11-1 completed
+Child 10-2 joined grandchildren: 10-2-1 ... 10-2-82
+Child 10-2 completed
+Child 10-3 joined grandchildren: 10-3-1 ... 10-3-82
+Child 10-3 completed
+Child 18-2 joined grandchildren: 18-2-1 ... 18-2-82
+Child 18-2 completed
+Initial 10 completed
+Initial 11 completed
+Initial 13 completed
+Child 8-1 joined grandchildren: 8-1-1 ... 8-1-82
+Child 8-1 completed
+Initial 18 completed
+Initial 8 completed
+Child 20-3 joined grandchildren: 20-3-1 ... 20-3-82
+Child 20-3 completed
+Initial 20 completed
+Child 9-2 joined grandchildren: 9-2-1 ... 9-2-82
+Child 9-2 completed
+Child 15-3 joined grandchildren: 15-3-1 ... 15-3-82
+Child 15-3 completed
+Initial 15 completed
+Child 12-1 joined grandchildren: 12-1-1 ... 12-1-82
+Child 12-1 completed
+Child 7-2 joined grandchildren: 7-2-1 ... 7-2-82
+Child 7-2 completed
+Initial 9 completed
+Child 4-2 joined grandchildren: 4-2-1 ... 4-2-82
+Child 4-2 completed
+Initial 12 completed
+Initial 7 completed
+Child 19-3 joined grandchildren: 19-3-1 ... 19-3-82
+Child 19-3 completed
+Initial 4 completed
+Child 16-1 joined grandchildren: 16-1-1 ... 16-1-82
+Child 16-1 completed
+Initial 19 completed
+Initial 16 completed
+2.c elapsed: 464.679 ms
+Threads created:   5000
+Threads destroyed: 5000
+Trial 2:
+
+=== 2.a Flat (no batching) ===
+Created threads: 1-1000
+Created threads: 1001-2000
+Created threads: 2001-3000
+Created threads: 3001-4000
+Created threads: 4001-5000
+Joined threads: 1-1000
+Joined threads: 1001-2000
+Joined threads: 2001-3000
+Joined threads: 3001-4000
+Joined threads: 4001-5000
+2.a elapsed: 421.322 ms
+Threads created:   5000
+Threads destroyed: 5000
+
+=== 2.b Two-level (no batching) ===
+Parent 1 started
+Parent 2 started
+Parent 3 started
+Parent 4 started
+Parent 5 started
+Parent 6 started
+Parent 7 started
+Parent 8 started
+Parent 9 started
+Parent 10 started
+Parent 11 started
+Parent 12 started
+Parent 13 started
+Parent 14 started
+Parent 15 started
+Parent 16 started
+Parent 17 started
+Parent 18 started
+Parent 19 started
+Parent 20 started
+Parent 21 started
+Parent 22 started
+Parent 23 started
+Parent 24 started
+Parent 1 created children: 1-1 ... 1-25
+Parent 25 started
+Parent 26 started
+Parent 4 created children: 4-1 ... 4-25
+Parent 2 created children: 2-1 ... 2-25
+Parent 27 started
+Parent 28 started
+Parent 6 created children: 6-1 ... 6-25
+Parent 29 started
+Parent 3 created children: 3-1 ... 3-25
+Parent 30 started
+Parent 31 started
+Parent 5 created children: 5-1 ... 5-25
+Parent 10 created children: 10-1 ... 10-25
+Parent 7 created children: 7-1 ... 7-25
+Parent 32 started
+Parent 9 created children: 9-1 ... 9-25
+Parent 33 started
+Parent 8 created children: 8-1 ... 8-25
+Parent 12 created children: 12-1 ... 12-25
+Parent 34 started
+Parent 11 created children: 11-1 ... 11-25
+Parent 35 started
+Parent 36 started
+Parent 37 started
+Parent 13 created children: 13-1 ... 13-25
+Parent 14 created children: 14-1 ... 14-25
+Parent 38 started
+Parent 15 created children: 15-1 ... 15-25
+Parent 39 started
+Parent 17 created children: 17-1 ... 17-25
+Parent 16 created children: 16-1 ... 16-25
+Parent 40 started
+Parent 20 created children: 20-1 ... 20-25
+Parent 41 started
+Parent 18 created children: 18-1 ... 18-25
+Parent 42 started
+Parent 43 started
+Parent 44 started
+Parent 45 started
+Parent 23 created children: 23-1 ... 23-25
+Parent 46 started
+Parent 19 created children: 19-1 ... 19-25
+Parent 25 created children: 25-1 ... 25-25
+Parent 47 started
+Parent 24 created children: 24-1 ... 24-25
+Parent 48 started
+Parent 22 created children: 22-1 ... 22-25
+Parent 2 created children: 2-26 ... 2-50
+Parent 49 started
+Parent 21 created children: 21-1 ... 21-25
+Parent 1 created children: 1-26 ... 1-50
+Parent 27 created children: 27-1 ... 27-25
+Parent 50 started
+Parent 4 created children: 4-26 ... 4-50
+Parent 28 created children: 28-1 ... 28-25
+Parent 29 created children: 29-1 ... 29-25
+Parent 30 created children: 30-1 ... 30-25
+Parent 3 created children: 3-26 ... 3-50
+Parent 10 created children: 10-26 ... 10-50
+Parent 26 created children: 26-1 ... 26-25
+Parent 9 created children: 9-26 ... 9-50
+Parent 31 created children: 31-1 ... 31-25
+Parent 33 created children: 33-1 ... 33-25
+Parent 7 created children: 7-26 ... 7-50
+Parent 32 created children: 32-1 ... 32-25
+Parent 6 created children: 6-26 ... 6-50
+Parent 34 created children: 34-1 ... 34-25
+Parent 5 created children: 5-26 ... 5-50
+Parent 8 created children: 8-26 ... 8-50
+Parent 11 created children: 11-26 ... 11-50
+Parent 14 created children: 14-26 ... 14-50
+Parent 13 created children: 13-26 ... 13-50
+Parent 35 created children: 35-1 ... 35-25
+Parent 15 created children: 15-26 ... 15-50
+Parent 36 created children: 36-1 ... 36-25
+Parent 39 created children: 39-1 ... 39-25
+Parent 41 created children: 41-1 ... 41-25
+Parent 12 created children: 12-26 ... 12-50
+Parent 38 created children: 38-1 ... 38-25
+Parent 37 created children: 37-1 ... 37-25
+Parent 17 created children: 17-26 ... 17-50
+Parent 18 created children: 18-26 ... 18-50
+Parent 43 created children: 43-1 ... 43-25
+Parent 20 created children: 20-26 ... 20-50
+Parent 42 created children: 42-1 ... 42-25
+Parent 40 created children: 40-1 ... 40-25
+Parent 16 created children: 16-26 ... 16-50
+Parent 24 created children: 24-26 ... 24-50
+Parent 25 created children: 25-26 ... 25-50
+Parent 48 created children: 48-1 ... 48-25
+Parent 22 created children: 22-26 ... 22-50
+Parent 44 created children: 44-1 ... 44-25
+Parent 19 created children: 19-26 ... 19-50
+Parent 50 created children: 50-1 ... 50-25
+Parent 45 created children: 45-1 ... 45-25
+Parent 23 created children: 23-26 ... 23-50
+Parent 49 created children: 49-1 ... 49-25
+Parent 27 created children: 27-26 ... 27-50
+Parent 29 created children: 29-26 ... 29-50
+Parent 46 created children: 46-1 ... 46-25
+Parent 21 created children: 21-26 ... 21-50
+Parent 47 created children: 47-1 ... 47-25
+Parent 2 created children: 2-51 ... 2-75
+Parent 28 created children: 28-26 ... 28-50
+Parent 9 created children: 9-51 ... 9-75
+Parent 1 created children: 1-51 ... 1-75
+Parent 4 created children: 4-51 ... 4-75
+Parent 26 created children: 26-26 ... 26-50
+Parent 31 created children: 31-26 ... 31-50
+Parent 34 created children: 34-26 ... 34-50
+Parent 30 created children: 30-26 ... 30-50
+Parent 10 created children: 10-51 ... 10-75
+Parent 3 created children: 3-51 ... 3-75
+Parent 7 created children: 7-51 ... 7-75
+Parent 32 created children: 32-26 ... 32-50
+Parent 6 created children: 6-51 ... 6-75
+Parent 8 created children: 8-51 ... 8-75
+Parent 33 created children: 33-26 ... 33-50
+Parent 35 created children: 35-26 ... 35-50
+Parent 36 created children: 36-26 ... 36-50
+Parent 13 created children: 13-51 ... 13-75
+Parent 14 created children: 14-51 ... 14-75
+Parent 37 created children: 37-26 ... 37-50
+Parent 5 created children: 5-51 ... 5-75
+Parent 12 created children: 12-51 ... 12-75
+Parent 11 created children: 11-51 ... 11-75
+Parent 15 created children: 15-51 ... 15-75
+Parent 20 created children: 20-51 ... 20-75
+Parent 41 created children: 41-26 ... 41-50
+Parent 17 created children: 17-51 ... 17-75
+Parent 38 created children: 38-26 ... 38-50
+Parent 43 created children: 43-26 ... 43-50
+Parent 24 created children: 24-51 ... 24-75
+Parent 39 created children: 39-26 ... 39-50
+Parent 18 created children: 18-51 ... 18-75
+Parent 40 created children: 40-26 ... 40-50
+Parent 16 created children: 16-51 ... 16-75
+Parent 50 created children: 50-26 ... 50-50
+Parent 22 created children: 22-51 ... 22-75
+Parent 25 created children: 25-51 ... 25-75
+Parent 48 created children: 48-26 ... 48-50
+Parent 46 created children: 46-26 ... 46-50
+Parent 45 created children: 45-26 ... 45-50
+Parent 42 created children: 42-26 ... 42-50
+Parent 23 created children: 23-51 ... 23-75
+Parent 29 created children: 29-51 ... 29-75
+Parent 21 created children: 21-51 ... 21-75
+Parent 27 created children: 27-51 ... 27-75
+Parent 44 created children: 44-26 ... 44-50
+Parent 47 created children: 47-26 ... 47-50
+Parent 19 created children: 19-51 ... 19-75
+Parent 26 created children: 26-51 ... 26-75
+Parent 34 created children: 34-51 ... 34-75
+Parent 49 created children: 49-26 ... 49-50
+Parent 35 created children: 35-51 ... 35-75
+Parent 28 created children: 28-51 ... 28-75
+Parent 32 created children: 32-51 ... 32-75
+Parent 31 created children: 31-51 ... 31-75
+Parent 30 created children: 30-51 ... 30-75
+Parent 33 created children: 33-51 ... 33-75
+Parent 37 created children: 37-51 ... 37-75
+Parent 36 created children: 36-51 ... 36-75
+Parent 38 created children: 38-51 ... 38-75
+Parent 39 created children: 39-51 ... 39-75
+Parent 43 created children: 43-51 ... 43-75
+Parent 41 created children: 41-51 ... 41-75
+Parent 50 created children: 50-51 ... 50-75
+Parent 48 created children: 48-51 ... 48-75
+Parent 40 created children: 40-51 ... 40-75
+Parent 42 created children: 42-51 ... 42-75
+Parent 46 created children: 46-51 ... 46-75
+Parent 44 created children: 44-51 ... 44-75
+Parent 45 created children: 45-51 ... 45-75
+Parent 49 created children: 49-51 ... 49-75
+Parent 47 created children: 47-51 ... 47-75
+2.b elapsed: 480.673 ms
+Threads created:   5000
+Threads destroyed: 5000
+
+=== 2.c Three-level (no batching) ===
+Initial 1 started
+Initial 2 started
+Initial 1 created child: 1-1
+Initial 2 created child: 2-1
+Initial 1 created child: 1-2
+Initial 3 started
+Initial 2 created child: 2-2
+Initial 1 created child: 1-3
+Initial 3 created child: 3-1
+Initial 4 started
+Initial 3 created child: 3-2
+Initial 2 created child: 2-3
+Initial 4 created child: 4-1
+Initial 4 created child: 4-2
+Initial 3 created child: 3-3
+Initial 5 started
+Initial 5 created child: 5-1
+Initial 4 created child: 4-3
+Initial 6 started
+Initial 6 created child: 6-1
+Initial 5 created child: 5-2
+Initial 7 started
+Initial 7 created child: 7-1
+Initial 5 created child: 5-3
+Initial 8 started
+Initial 6 created child: 6-2
+Initial 7 created child: 7-2
+Initial 9 started
+Initial 8 created child: 8-1
+Initial 10 started
+Initial 6 created child: 6-3
+Initial 7 created child: 7-3
+Initial 8 created child: 8-2
+Initial 10 created child: 10-1
+Initial 9 created child: 9-1
+Initial 11 started
+Initial 8 created child: 8-3
+Initial 11 created child: 11-1
+Initial 10 created child: 10-2
+Initial 9 created child: 9-2
+Initial 12 started
+Initial 10 created child: 10-3
+Initial 9 created child: 9-3Initial 12 created child: 12-1
+Initial 13 started
+Initial 12 created child: 12-2
+
+Initial 11 created child: 11-2
+Initial 14 started
+Initial 13 created child: 13-1
+Initial 13 created child: 13-2
+Initial 12 created child: 12-3
+Initial 14 created child: 14-1
+Initial 13 created child: 13-3
+Initial 11 created child: 11-3
+Initial 15 started
+Initial 16 started
+Initial 14 created child: 14-2
+Initial 16 created child: 16-1
+Initial 17 started
+Initial 16 created child: 16-2
+Initial 15 created child: 15-1
+Initial 17 created child: 17-1
+Initial 14 created child: 14-3
+Initial 17 created child: 17-2
+Initial 15 created child: 15-2
+Initial 17 created child: 17-3
+Initial 16 created child: 16-3
+Initial 18 started
+Initial 15 created child: 15-3
+Initial 18 created child: 18-1
+Initial 19 started
+Initial 20 started
+Initial 19 created child: 19-1
+Initial 18 created child: 18-2
+Initial 18 created child: 18-3
+Initial 20 created child: 20-1
+Initial 19 created child: 19-2
+Child 1-2 created grandchildren: 1-2-1 ... 1-2-25
+Initial 20 created child: 20-2
+Initial 19 created child: 19-3
+Initial 20 created child: 20-3
+Child 1-1 created grandchildren: 1-1-1 ... 1-1-25
+Child 4-1 created grandchildren: 4-1-1 ... 4-1-25
+Child 4-2 created grandchildren: 4-2-1 ... 4-2-25
+Child 1-3 created grandchildren: 1-3-1 ... 1-3-25
+Child 3-3 created grandchildren: 3-3-1 ... 3-3-25
+Child 5-1 created grandchildren: 5-1-1 ... 5-1-25
+Child 2-2 created grandchildren: 2-2-1 ... 2-2-25
+Child 4-3 created grandchildren: 4-3-1 ... 4-3-25
+Child 11-1 created grandchildren: 11-1-1 ... 11-1-25
+Child 3-2 created grandchildren: 3-2-1 ... 3-2-25
+Child 2-1 created grandchildren: 2-1-1 ... 2-1-25
+Child 3-1 created grandchildren: 3-1-1 ... 3-1-25
+Child 5-2 created grandchildren: 5-2-1 ... 5-2-25
+Child 7-3 created grandchildren: 7-3-1 ... 7-3-25
+Child 2-3 created grandchildren: 2-3-1 ... 2-3-25
+Child 6-1 created grandchildren: 6-1-1 ... 6-1-25
+Child 10-3 created grandchildren: 10-3-1 ... 10-3-25
+Child 10-1 created grandchildren: 10-1-1 ... 10-1-25
+Child 7-1 created grandchildren: 7-1-1 ... 7-1-25
+Child 6-3 created grandchildren: 6-3-1 ... 6-3-25
+Child 5-3 created grandchildren: 5-3-1 ... 5-3-25
+Child 9-1 created grandchildren: 9-1-1 ... 9-1-25
+Child 7-2 created grandchildren: 7-2-1 ... 7-2-25
+Child 12-1 created grandchildren: 12-1-1 ... 12-1-25
+Child 8-3 created grandchildren: 8-3-1 ... 8-3-25
+Child 6-2 created grandchildren: 6-2-1 ... 6-2-25
+Child 9-2 created grandchildren: 9-2-1 ... 9-2-25
+Child 11-3 created grandchildren: 11-3-1 ... 11-3-25
+Child 10-2 created grandchildren: 10-2-1 ... 10-2-25
+Child 8-1 created grandchildren: 8-1-1 ... 8-1-25
+Child 12-3 created grandchildren: 12-3-1 ... 12-3-25
+Child 14-3 created grandchildren: 14-3-1 ... 14-3-25
+Child 14-1 created grandchildren: 14-1-1 ... 14-1-25
+Child 15-1 created grandchildren: 15-1-1 ... 15-1-25
+Child 12-2 created grandchildren: 12-2-1 ... 12-2-25
+Child 8-2 created grandchildren: 8-2-1 ... 8-2-25
+Child 13-1 created grandchildren: 13-1-1 ... 13-1-25
+Child 17-1 created grandchildren: 17-1-1 ... 17-1-25
+Child 11-2 created grandchildren: 11-2-1 ... 11-2-25
+Child 14-2 created grandchildren: 14-2-1 ... 14-2-25
+Child 15-2 created grandchildren: 15-2-1 ... 15-2-25
+Child 17-3 created grandchildren: 17-3-1 ... 17-3-25
+Child 17-2 created grandchildren: 17-2-1 ... 17-2-25
+Child 16-3 created grandchildren: 16-3-1 ... 16-3-25
+Child 9-3 created grandchildren: 9-3-1 ... 9-3-25
+Child 16-2 created grandchildren: 16-2-1 ... 16-2-25
+Child 18-2 created grandchildren: 18-2-1 ... 18-2-25
+Child 16-1 created grandchildren: 16-1-1 ... 16-1-25
+Child 15-3 created grandchildren: 15-3-1 ... 15-3-25
+Child 13-3 created grandchildren: 13-3-1 ... 13-3-25
+Child 18-1 created grandchildren: 18-1-1 ... 18-1-25
+Child 18-3 created grandchildren: 18-3-1 ... 18-3-25
+Child 20-2 created grandchildren: 20-2-1 ... 20-2-25
+Child 19-2 created grandchildren: 19-2-1 ... 19-2-25
+Child 20-1 created grandchildren: 20-1-1 ... 20-1-25
+Child 13-2 created grandchildren: 13-2-1 ... 13-2-25
+Child 1-1 created grandchildren: 1-1-26 ... 1-1-50
+Child 1-2 created grandchildren: 1-2-26 ... 1-2-50
+Child 19-3 created grandchildren: 19-3-1 ... 19-3-25
+Child 20-3 created grandchildren: 20-3-1 ... 20-3-25
+Child 3-2 created grandchildren: 3-2-26 ... 3-2-50
+Child 19-1 created grandchildren: 19-1-1 ... 19-1-25
+Child 4-2 created grandchildren: 4-2-26 ... 4-2-50
+Child 1-3 created grandchildren: 1-3-26 ... 1-3-50
+Child 3-3 created grandchildren: 3-3-26 ... 3-3-50
+Child 10-1 created grandchildren: 10-1-26 ... 10-1-50
+Child 4-1 created grandchildren: 4-1-26 ... 4-1-50
+Child 3-1 created grandchildren: 3-1-26 ... 3-1-50
+Child 5-1 created grandchildren: 5-1-26 ... 5-1-50
+Child 2-2 created grandchildren: 2-2-26 ... 2-2-50
+Child 11-3 created grandchildren: 11-3-26 ... 11-3-50
+Child 6-3 created grandchildren: 6-3-26 ... 6-3-50
+Child 4-3 created grandchildren: 4-3-26 ... 4-3-50
+Child 9-1 created grandchildren: 9-1-26 ... 9-1-50
+Child 15-1 created grandchildren: 15-1-26 ... 15-1-50
+Child 8-3 created grandchildren: 8-3-26 ... 8-3-50
+Child 5-2 created grandchildren: 5-2-26 ... 5-2-50
+Child 2-1 created grandchildren: 2-1-26 ... 2-1-50
+Child 12-3 created grandchildren: 12-3-26 ... 12-3-50
+Child 2-3 created grandchildren: 2-3-26 ... 2-3-50
+Child 12-1 created grandchildren: 12-1-26 ... 12-1-50
+Child 11-1 created grandchildren: 11-1-26 ... 11-1-50
+Child 7-1 created grandchildren: 7-1-26 ... 7-1-50
+Child 14-3 created grandchildren: 14-3-26 ... 14-3-50
+Child 5-3 created grandchildren: 5-3-26 ... 5-3-50
+Child 7-3 created grandchildren: 7-3-26 ... 7-3-50
+Child 10-3 created grandchildren: 10-3-26 ... 10-3-50
+Child 9-2 created grandchildren: 9-2-26 ... 9-2-50
+Child 7-2 created grandchildren: 7-2-26 ... 7-2-50
+Child 6-2 created grandchildren: 6-2-26 ... 6-2-50
+Child 6-1 created grandchildren: 6-1-26 ... 6-1-50
+Child 15-2 created grandchildren: 15-2-26 ... 15-2-50
+Child 8-1 created grandchildren: 8-1-26 ... 8-1-50
+Child 10-2 created grandchildren: 10-2-26 ... 10-2-50
+Child 14-1 created grandchildren: 14-1-26 ... 14-1-50
+Child 17-1 created grandchildren: 17-1-26 ... 17-1-50
+Child 16-1 created grandchildren: 16-1-26 ... 16-1-50
+Child 8-2 created grandchildren: 8-2-26 ... 8-2-50
+Child 13-1 created grandchildren: 13-1-26 ... 13-1-50
+Child 17-2 created grandchildren: 17-2-26 ... 17-2-50
+Child 14-2 created grandchildren: 14-2-26 ... 14-2-50
+Child 15-3 created grandchildren: 15-3-26 ... 15-3-50
+Child 16-2 created grandchildren: 16-2-26 ... 16-2-50
+Child 11-2 created grandchildren: 11-2-26 ... 11-2-50
+Child 18-2 created grandchildren: 18-2-26 ... 18-2-50
+Child 19-3 created grandchildren: 19-3-26 ... 19-3-50
+Child 16-3 created grandchildren: 16-3-26 ... 16-3-50
+Child 12-2 created grandchildren: 12-2-26 ... 12-2-50
+Child 1-1 created grandchildren: 1-1-51 ... 1-1-75
+Child 13-3 created grandchildren: 13-3-26 ... 13-3-50
+Child 18-1 created grandchildren: 18-1-26 ... 18-1-50
+Child 13-2 created grandchildren: 13-2-26 ... 13-2-50
+Child 18-3 created grandchildren: 18-3-26 ... 18-3-50
+Child 17-3 created grandchildren: 17-3-26 ... 17-3-50
+Child 20-3 created grandchildren: 20-3-26 ... 20-3-50
+Child 19-2 created grandchildren: 19-2-26 ... 19-2-50
+Child 9-3 created grandchildren: 9-3-26 ... 9-3-50
+Child 20-1 created grandchildren: 20-1-26 ... 20-1-50
+Child 20-2 created grandchildren: 20-2-26 ... 20-2-50
+Child 1-2 created grandchildren: 1-2-51 ... 1-2-75
+Child 3-2 created grandchildren: 3-2-51 ... 3-2-75
+Child 19-1 created grandchildren: 19-1-26 ... 19-1-50
+Child 3-3 created grandchildren: 3-3-51 ... 3-3-75
+Child 4-1 created grandchildren: 4-1-51 ... 4-1-75
+Child 15-1 created grandchildren: 15-1-51 ... 15-1-75
+Child 1-3 created grandchildren: 1-3-51 ... 1-3-75
+Child 4-2 created grandchildren: 4-2-51 ... 4-2-75
+Child 2-1 created grandchildren: 2-1-51 ... 2-1-75
+Child 10-1 created grandchildren: 10-1-51 ... 10-1-75
+Child 9-1 created grandchildren: 9-1-51 ... 9-1-75
+Child 2-2 created grandchildren: 2-2-51 ... 2-2-75
+Child 11-3 created grandchildren: 11-3-51 ... 11-3-75
+Child 6-3 created grandchildren: 6-3-51 ... 6-3-75
+Child 8-3 created grandchildren: 8-3-51 ... 8-3-75
+Child 4-3 created grandchildren: 4-3-51 ... 4-3-75
+Child 3-1 created grandchildren: 3-1-51 ... 3-1-75
+Child 12-3 created grandchildren: 12-3-51 ... 12-3-75Child 12-1 created grandchildren: 12-1-51 ... 12-1-75
+
+Child 2-3 created grandchildren: 2-3-51 ... 2-3-75
+Child 7-1 created grandchildren: 7-1-51 ... 7-1-75
+Child 5-1 created grandchildren: 5-1-51 ... 5-1-75
+Child 15-2 created grandchildren: 15-2-51 ... 15-2-75
+Child 5-2 created grandchildren: 5-2-51 ... 5-2-75
+Child 17-1 created grandchildren: 17-1-51 ... 17-1-75
+Child 5-3 created grandchildren: 5-3-51 ... 5-3-75
+Child 11-1 created grandchildren: 11-1-51 ... 11-1-75
+Child 10-3 created grandchildren: 10-3-51 ... 10-3-75
+Child 18-2 created grandchildren: 18-2-51 ... 18-2-75
+Child 14-3 created grandchildren: 14-3-51 ... 14-3-75
+Child 14-1 created grandchildren: 14-1-51 ... 14-1-75
+Child 11-2 created grandchildren: 11-2-51 ... 11-2-75
+Child 7-2 created grandchildren: 7-2-51 ... 7-2-75
+Child 8-2 created grandchildren: 8-2-51 ... 8-2-75
+Child 7-3 created grandchildren: 7-3-51 ... 7-3-75
+Child 9-2 created grandchildren: 9-2-51 ... 9-2-75
+Child 6-2 created grandchildren: 6-2-51 ... 6-2-75
+Child 12-2 created grandchildren: 12-2-51 ... 12-2-75
+Child 8-1 created grandchildren: 8-1-51 ... 8-1-75
+Child 18-3 created grandchildren: 18-3-51 ... 18-3-75
+Child 16-1 created grandchildren: 16-1-51 ... 16-1-75
+Child 14-2 created grandchildren: 14-2-51 ... 14-2-75
+Child 10-2 created grandchildren: 10-2-51 ... 10-2-75
+Child 6-1 created grandchildren: 6-1-51 ... 6-1-75
+Child 15-3 created grandchildren: 15-3-51 ... 15-3-75
+Child 13-1 created grandchildren: 13-1-51 ... 13-1-75
+Child 17-2 created grandchildren: 17-2-51 ... 17-2-75
+Child 20-1 created grandchildren: 20-1-51 ... 20-1-75
+Child 16-2 created grandchildren: 16-2-51 ... 16-2-75
+Child 19-1 created grandchildren: 19-1-51 ... 19-1-75
+Child 1-1 joined grandchildren: 1-1-1 ... 1-1-82
+Child 1-1 completed
+Child 18-1 created grandchildren: 18-1-51 ... 18-1-75
+Child 19-3 created grandchildren: 19-3-51 ... 19-3-75
+Child 20-3 created grandchildren: 20-3-51 ... 20-3-75
+Child 13-3 created grandchildren: 13-3-51 ... 13-3-75
+Child 17-3 created grandchildren: 17-3-51 ... 17-3-75
+Child 9-3 created grandchildren: 9-3-51 ... 9-3-75
+Child 19-2 created grandchildren: 19-2-51 ... 19-2-75
+Child 16-3 created grandchildren: 16-3-51 ... 16-3-75
+Child 13-2 created grandchildren: 13-2-51 ... 13-2-75
+Child 20-2 created grandchildren: 20-2-51 ... 20-2-75
+Child 3-2 joined grandchildren: 3-2-1 ... 3-2-82
+Child 3-2 completed
+Child 8-1 joined grandchildren: 8-1-1 ... 8-1-82
+Child 8-1 completed
+Child 2-1 joined grandchildren: 2-1-1 ... 2-1-82
+Child 2-1 completed
+Child 13-2 joined grandchildren: 13-2-1 ... 13-2-82
+Child 13-2 completed
+Child 10-3 joined grandchildren: 10-3-1 ... 10-3-82
+Child 10-3 completed
+Child 12-1 joined grandchildren: 12-1-1 ... 12-1-82
+Child 12-1 completed
+Child 5-1 joined grandchildren: 5-1-1 ... 5-1-82
+Child 5-1 completed
+Child 6-3 joined grandchildren: 6-3-1 ... 6-3-82
+Child 6-3 completed
+Child 9-3 joined grandchildren: 9-3-1 ... 9-3-82
+Child 9-3 completed
+Child 7-2 joined grandchildren: 7-2-1 ... 7-2-82
+Child 7-2 completed
+Child 15-1 joined grandchildren: 15-1-1 ... 15-1-82
+Child 15-1 completed
+Child 4-3 joined grandchildren: 4-3-1 ... 4-3-82
+Child 4-3 completed
+Child 1-2 joined grandchildren: 1-2-1 ... 1-2-82
+Child 1-2 completed
+Child 5-2 joined grandchildren: 5-2-1 ... 5-2-82
+Child 5-2 completed
+Child 3-3 joined grandchildren: 3-3-1 ... 3-3-82
+Child 3-3 completed
+Child 18-1 joined grandchildren: 18-1-1 ... 18-1-82
+Child 18-1 completed
+Child 2-2 joined grandchildren: 2-2-1 ... 2-2-82
+Child 2-2 completed
+Child 16-3 joined grandchildren: 16-3-1 ... 16-3-82
+Child 16-3 completed
+Child 19-2 joined grandchildren: 19-2-1 ... 19-2-82
+Child 19-2 completed
+Child 19-1 joined grandchildren: 19-1-1 ... 19-1-82
+Child 19-1 completed
+Child 9-1 joined grandchildren: 9-1-1 ... 9-1-82
+Child 9-1 completed
+Child 1-3 joined grandchildren: 1-3-1 ... 1-3-82
+Child 1-3 completed
+Initial 1 completed
+Child 12-3 joined grandchildren: 12-3-1 ... 12-3-82
+Child 12-3 completed
+Child 17-1 joined grandchildren: 17-1-1 ... 17-1-82
+Child 17-1 completed
+Child 19-3 joined grandchildren: 19-3-1 ... 19-3-82
+Child 19-3 completed
+Child 12-2 joined grandchildren: 12-2-1 ... 12-2-82
+Child 12-2 completed
+Initial 12 completed
+Child 6-1 joined grandchildren: 6-1-1 ... 6-1-82
+Child 6-1 completed
+Initial 19 completed
+Child 11-3 joined grandchildren: 11-3-1 ... 11-3-82
+Child 11-3 completed
+Child 4-2 joined grandchildren: 4-2-1 ... 4-2-82
+Child 4-2 completed
+Child 20-1 joined grandchildren: 20-1-1 ... 20-1-82
+Child 20-1 completed
+Child 16-1 joined grandchildren: 16-1-1 ... 16-1-82
+Child 16-1 completed
+Child 8-2 joined grandchildren: 8-2-1 ... 8-2-82
+Child 8-2 completed
+Child 10-1 joined grandchildren: 10-1-1 ... 10-1-82
+Child 10-1 completed
+Child 13-3 joined grandchildren: 13-3-1 ... 13-3-82
+Child 13-3 completed
+Child 17-3 joined grandchildren: 17-3-1 ... 17-3-82
+Child 17-3 completed
+Child 15-3 joined grandchildren: 15-3-1 ... 15-3-82
+Child 15-3 completed
+Child 7-3 joined grandchildren: 7-3-1 ... 7-3-82
+Child 7-3 completed
+Child 3-1 joined grandchildren: 3-1-1 ... 3-1-82
+Child 3-1 completed
+Child 4-1 joined grandchildren: 4-1-1 ... 4-1-82
+Child 4-1 completed
+Child 18-3 joined grandchildren: 18-3-1 ... 18-3-82
+Child 18-3 completed
+Child 7-1 joined grandchildren: 7-1-1 ... 7-1-82
+Child 7-1 completed
+Initial 3 completed
+Initial 4 completed
+Child 14-2 joined grandchildren: 14-2-1 ... 14-2-82
+Child 14-2 completed
+Child 14-3 joined grandchildren: 14-3-1 ... 14-3-82
+Child 14-3 completed
+Child 18-2 joined grandchildren: 18-2-1 ... 18-2-82
+Child 18-2 completed
+Initial 7 completed
+Child 13-1 joined grandchildren: 13-1-1 ... 13-1-82
+Child 13-1 completed
+Child 8-3 joined grandchildren: 8-3-1 ... 8-3-82
+Child 8-3 completed
+Initial 18 completed
+Child 16-2 joined grandchildren: 16-2-1 ... 16-2-82
+Child 16-2 completed
+Child 2-3 joined grandchildren: 2-3-1 ... 2-3-82
+Child 2-3 completed
+Initial 8 completed
+Initial 13 completed
+Initial 16 completed
+Initial 2 completed
+Child 15-2 joined grandchildren: 15-2-1 ... 15-2-82
+Child 15-2 completed
+Child 6-2 joined grandchildren: 6-2-1 ... 6-2-82
+Child 6-2 completed
+Child 5-3 joined grandchildren: 5-3-1 ... 5-3-82
+Child 5-3 completed
+Initial 15 completed
+Initial 5 completed
+Initial 6 completed
+Child 17-2 joined grandchildren: 17-2-1 ... 17-2-82
+Child 17-2 completed
+Child 14-1 joined grandchildren: 14-1-1 ... 14-1-82
+Child 14-1 completed
+Initial 17 completed
+Child 11-1 joined grandchildren: 11-1-1 ... 11-1-82
+Child 11-1 completed
+Initial 14 completed
+Child 10-2 joined grandchildren: 10-2-1 ... 10-2-82
+Child 10-2 completed
+Child 20-2 joined grandchildren: 20-2-1 ... 20-2-82
+Child 20-2 completed
+Initial 10 completed
+Child 20-3 joined grandchildren: 20-3-1 ... 20-3-82
+Child 20-3 completed
+Child 9-2 joined grandchildren: 9-2-1 ... 9-2-82
+Child 9-2 completed
+Initial 20 completed
+Child 11-2 joined grandchildren: 11-2-1 ... 11-2-82
+Child 11-2 completed
+Initial 9 completed
+Initial 11 completed
+2.c elapsed: 464.142 ms
+Threads created:   5000
+Threads destroyed: 5000
+Averages:
+
+Average 2.a elapsed: 412.427494 ms
+Average 2.b elapsed: 470.40316766666666 ms
+Average 2.c elapsed: 471.086913 ms
