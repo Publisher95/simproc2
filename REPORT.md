@@ -122,4 +122,4 @@ The primary effect of hierarchy is the introduction of synchronization bottlenec
 |----------|------------------|------------------|-------------------|
 | C        | 187.449          | 209.407          | 233.077           |
 | Python    | 412.427          | 470.403          | 471.087           |
-
+| C with threads | 

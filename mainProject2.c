@@ -235,7 +235,7 @@ void threadPoolDestroy(threadPool *tp){
 
 
 // ======= Fixed baseline Thread Pool =======
-enum {TOTAL_THREADS = 100};
+enum {TOTAL_THREADS = 25};
 
 
 // ======= Fixed baseline (A, B, C must match) =======
