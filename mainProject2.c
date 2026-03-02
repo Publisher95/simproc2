@@ -136,7 +136,7 @@ void *threadWorker(void *arg){
         while(tp->firstWork == NULL && !tp->stop)
             pthread_cond_wait(&(tp->workCond), &(tp->workMutex));
         
-        if(tp->stop)
+        if(tp->stop && tp->firstWork == NULL)
             break;
 
         tmpWork = getWork(tp);
@@ -146,13 +146,14 @@ void *threadWorker(void *arg){
         if(tmpWork != NULL){
             tmpWork->func(tmpWork->arg);
             destroyWork(tmpWork);
-        }
         
-        pthread_mutex_lock(&(tp->workMutex));
-        tp->workingCount--;
-        if(!tp->stop && tp->workingCount == 0 && tp->firstWork == NULL)
-            pthread_cond_signal(&(tp->workingCond));
-        pthread_mutex_unlock(&(tp->workMutex));
+        
+            pthread_mutex_lock(&(tp->workMutex));
+            tp->workingCount--;
+            if(!tp->stop && tp->workingCount == 0 && tp->firstWork == NULL)
+                pthread_cond_signal(&(tp->workingCond));
+            pthread_mutex_unlock(&(tp->workMutex));
+        }
     }
     tp->threadCount--;
     pthread_cond_signal(&(tp->workingCond));
@@ -192,7 +193,9 @@ threadPool *createThreadPool(int amount){
     
     tp->firstWork = NULL;
     tp->lastWork = NULL;
-    
+    tp->threadCount = amount;
+
+
     for(i=0; i < amount; i++){
         pthread_create(&thread, NULL, threadWorker, tp);
         pthread_detach(thread);
@@ -529,32 +532,31 @@ static void *parent_worker_2b_thread_pool(void *arg) {
     }
     threadPoolWait(holder->tp);
 
-    printf("Work Complete!");
+    printf("Work Complete!\n");
+
 
     printf("Parent %d joined children: %d-%d ... %d-1\n", pid, pid, B_CHILDREN_PER_PARENT, pid);
     printf("Parent %d completed\n", pid);
-
-    atomic_fetch_add(&g_destroyed, 1); // parent destroyed
+    
+    atomic_fetch_add(&g_destroyed, 1);
+    free(holder);
     return NULL;
 }
 
 static long long run2b_two_level_thread_pool(threadPool *mainPool) {
-    worker_2b_holder holder;
-    holder.tp = mainPool;
-    
-
     printf("\n=== 2.b Two-level (Thread Pooling) ===\n");
     long long start = now_ns();
 
 
     for (int i = 0; i < B_PARENTS; ++i) {
-        holder.id = i;
-        threadPoolAddWork(mainPool,parent_worker_2b_thread_pool, &holder);
+        worker_2b_holder *holder = malloc(sizeof(*holder));
+        holder->tp = mainPool;
+        holder->id = i + 1;
         atomic_fetch_add(&g_created, 1);
+        threadPoolAddWork(mainPool, parent_worker_2b_thread_pool, holder);
     }
-    
-    threadPoolWait(mainPool);
 
+    threadPoolWait(mainPool);
 
     long long end = now_ns();
     print_summary("2.b", start, end);
@@ -720,12 +722,6 @@ static void run2c_three_level_batched(int grand_batch_size) {
 // 2c Thread pool
 // ============================================================
 
-
-typedef struct{
-    threadPool *tp;
-    int id;
-} child_2c;
-
 typedef struct{
     threadPool *tp;
     int parentid;
@@ -733,17 +729,15 @@ typedef struct{
 } grandchild_2c;
 
 
-static void *child_worker_2c_Thread_Pool(void *arg) {
+static void *child_worker_2c_thread_pool(void *arg) {
     grandchild_2c *holder = (grandchild_2c *)arg;
 
     int iid = holder->parentid;
     int cid = holder->id;
     
     for (int i = 0; i < C_GRANDCHILDREN_PER_CHILD; ++i) {
-        
         atomic_fetch_add(&g_created, 1);
         threadPoolAddWork(holder->tp,grandchild_worker_2c, NULL);
-       
         if ((i + 1) % 25 == 0) {
             printf("Child %d-%d added grandchildren to work: %d-%d-%d ... %d-%d-%d\n", iid, cid, iid, cid, i - 23, iid, cid, i + 1);
         }
@@ -754,23 +748,23 @@ static void *child_worker_2c_Thread_Pool(void *arg) {
     printf("Child %d-%d completed\n", iid, cid);
 
     atomic_fetch_add(&g_destroyed, 1); // child destroyed
+    free(holder);
     return NULL;
 }
 
-static void *initial_worker_2c_Thread_Pool(void *arg) {
-    grandchild_2c *holder;
-    child_2c *tmp = (child_2c *)arg;
-    holder->tp = tmp->tp;
-    holder->parentid = tmp->id;
+static void *initial_worker_2c_thread_pool(void *arg) {
+    grandchild_2c *holder = (grandchild_2c *)arg;
     int iid = holder->parentid;
-    holder->id = 0;
 
     printf("Initial %d started\n", iid);
 
     for (int i = 0; i < C_CHILDREN_PER_INITIAL; ++i) {
-        
-        holder->id = i+1;
-        threadPoolAddWork(holder->tp, child_worker_2c_Thread_Pool, holder);
+        grandchild_2c *childHolder = malloc(sizeof(grandchild_2c));
+        childHolder->tp = holder->tp;
+        childHolder->parentid = iid;
+        childHolder->id = i+1;
+
+        threadPoolAddWork(holder->tp, child_worker_2c_thread_pool, holder);
         atomic_fetch_add(&g_created, 1);
         printf("Initial %d added child to work: %d-%d\n", iid, iid, i + 1);
     }
@@ -779,16 +773,12 @@ static void *initial_worker_2c_Thread_Pool(void *arg) {
 
     printf("Initial %d completed\n", iid);
     
-
-
     atomic_fetch_add(&g_destroyed, 1); // initial destroyed
-
+    free(holder);
     return NULL;
 }
 
 static long long run2c_three_level_thread_pool(threadPool *mainPool) {
-    child_2c holder;
-    holder.tp = mainPool;
 
     printf("\n=== 2.c Three-level (thread pooling) ===\n");
     long long start = now_ns();
@@ -796,9 +786,11 @@ static long long run2c_three_level_thread_pool(threadPool *mainPool) {
    
 
     for (int i = 0; i < C_INITIALS; ++i) {
-        holder.id = i;
+        grandchild_2c *holder = malloc(sizeof(*holder));
+        holder->tp = mainPool;
+        holder->parentid = i+1;
         atomic_fetch_add(&g_created, 1);
-        threadPoolAddWork(mainPool, initial_worker_2c_Thread_Pool, &holder);
+        threadPoolAddWork(mainPool, initial_worker_2c_thread_pool, &holder);
     }
 
     threadPoolWait(mainPool);
@@ -847,7 +839,7 @@ int main(void) {
         elapsedD[i] = run2a_flat_thread_pool(mainPool);
         
         reset_counts();
-       // elapsedE[i] = run2b_two_level_thread_pool(mainPool);
+        elapsedE[i] = run2b_two_level_thread_pool(mainPool);
 
         reset_counts();
         elapsedF[i] = run2c_three_level_thread_pool(mainPool);
